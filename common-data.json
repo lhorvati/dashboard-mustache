@@ -1,0 +1,458 @@
+{
+  "managed-by": "Your account is managed by Codeanywhere.com",
+  "profile-percentage-display": "100%",
+  "profile-percentage": "percentage-10",
+
+  "account__user-name": "Mate",
+  "account__user-lastname": "Lopata",
+  "account__user-email": "mate.lopata@gmail.com",
+  "account__user-company": "Lopatanje.com",
+  "account__user-image-url": "assets/images/profile.jpg",
+
+  "resource-percentage__containers": "percentage-5",
+  "resource-num__containers": "2/4",
+  "resource-percentage__remote": "percentage-10",
+  "resource-num__remote": "4/4",
+  "resource-percentage__ram": "percentage-4",
+  "resource-num__ram": "256MB/1.5GB",
+  "resource-percentage__disk": "percentage-7",
+  "resource-num__disk": "55GB/80GB",
+  "resource-percentage__transfer": "percentage-2",
+  "resource-num__transfer": "1000GB/1TB",
+
+  "github__acc-list": [
+    {"github__acc-list-name": "frane.masklin@gmail.com"}
+  ],
+  "bitbucket__acc-list": false ,
+  "google__acc-list": [
+    {"google__acc-list-name": "frane.masklin@gmail.com"},
+    {"google__acc-list-name": "jure.beton@gmail.com"},
+    {"google__acc-list-name": "jožo.mistrija@gmail.com"}
+  ],
+  "facebook__acc-list": [
+    {"facebook__acc-list-name": "jure.beton@gmail.com"}
+  ],
+  "do__acc-list": [
+    {"do__acc-list-name": "jure.beton@gmail.com"}
+  ],
+  "onedrive__acc-list": [
+    {"onedrive__acc-list-name": "frane.masklin@gmail.com"}
+  ],
+
+  "steps": [
+    {"steps-name": "Create new container"},
+    {"steps-name": "Add 3rd party service"},
+    {"steps-name": "Buy premium account"},
+    {"steps-name": "Report error"}
+  ],
+
+  "subscription-plan": "Yearly business plan",
+
+  "billing__subscription-total": "$480.00 USD",
+  "billing__subscription-status": "Canceled",
+  "billing__subscription-quantity": "1",
+  "billing__subscription-start-date": "Dec 23, 2015",
+  "billing__subscription-invoice-id": "28582",
+  "billing__subscription-recuring-date": "Dec 23, 2020",
+  "billing-info-name": "Mate Lopata",
+  "billing-info-card": "XXXX-1223 (MasterCard)",
+
+  "manage-accounts": [
+    {
+      "manage-account-name": "jožo.mistrija@gmail.com",
+      "manage-account-always-on": "1",
+      "manage-account-revisions": "5",
+      "manage-account-remote-connections": "2"
+    },
+    {
+      "manage-account-name": "jure.beton@gmail.com",
+      "manage-account-always-on": "5",
+      "manage-account-revisions": "2",
+      "manage-account-remote-connections": "7"
+    }
+  ],
+
+  "addons-list": [
+    {
+      "addons-name": "Unlimited revisions",
+      "addons-quantity": "1",
+      "addons-assign": "1",
+      "addons-unassign": "1"
+    },
+    {
+      "addons-name": "Container always on",
+      "addons-quantity": "15",
+      "addons-assign": "15",
+      "addons-unassign": "15"
+    },
+    {
+      "addons-name": "Account licence",
+      "addons-quantity": "4",
+      "addons-assign": "3",
+      "addons-unassign": "1"
+    },
+    {
+      "addons-name": "Additional 15 remote connections",
+      "addons-quantity": "105",
+      "addons-assign": "52",
+      "addons-unassign": "53"
+    },
+    {
+      "addons-name": "Additional 15 custom domains",
+      "addons-quantity": "21",
+      "addons-assign": "14",
+      "addons-unassign": "7"
+    }
+  ],
+
+  "invoices-list": [
+    {
+      "invoice-id": "28582",
+      "invoice-billed-on": "Dec 24, 2017",
+       "invoice-due-on": "Dec 24, 2018",
+      "invoice-status": "paid",
+      "invoice-total": "$480.00 USD"
+    },
+    {
+      "invoice-id": "28541",
+      "invoice-billed-on": "Jul 14, 2016",
+       "invoice-due-on": "Dec 24, 2015",
+      "invoice-status": "canceled",
+      "invoice-total": "$240.00 USD"
+    },
+    {
+      "invoice-id": "28582",
+      "invoice-billed-on": "Dec 24, 2015",
+       "invoice-due-on": "Dec 24, 2014",
+      "invoice-status": "paid",
+      "invoice-total": "$240.00 USD"
+    }
+  ],
+
+  "projects": [
+    {
+      "project-title": "Codemirror",
+      "project-state": "hosted",
+      "project-url": "github.com/codemirror/Codemirror",
+      "project-created": "Oct. 19. 2015",
+      "project-last-opened": "7 days ago",
+      "project-os": "Ubuntu 14.04",
+      "project-cpu": "1",
+      "project-ram": "256MB",
+      "project-disk": "40GB",
+      "project-transfer": "1000GB",
+      "project-remote-connections": "1",
+      "project-shared-with": "5"
+    },
+    {
+      "project-title": "Top-navigation",
+      "project-state": "hosted",
+      "project-url": "github.com/codemirror/Codemirror",
+      "project-created": "Oct. 19. 2015",
+      "project-last-opened": "7 days ago",
+      "project-os": "Ubuntu 14.04",
+      "project-cpu": "1",
+      "project-ram": "256MB",
+      "project-disk": "40GB",
+      "project-transfer": "1000GB",
+      "project-remote-connections": "1",
+      "project-shared-with": "5"
+    },
+    {
+      "project-title": "Mobile-app",
+      "project-state": "hosted",
+      "project-url": "github.com/codemirror/Codemirror",
+      "project-created": "Oct. 19. 2015",
+      "project-last-opened": "7 days ago",
+      "project-os": "Ubuntu 14.04",
+      "project-cpu": "1",
+      "project-ram": "256MB",
+      "project-disk": "40GB",
+      "project-transfer": "1000GB",
+      "project-remote-connections": "1",
+      "project-shared-with": "5"
+    },
+    {
+      "project-title": "File-explorer",
+      "project-state": "hosted",
+      "project-url": "github.com/codemirror/Codemirror",
+      "project-created": "Oct. 19. 2015",
+      "project-last-opened": "7 days ago",
+      "project-os": "Ubuntu 14.04",
+      "project-cpu": "1",
+      "project-ram": "256MB",
+      "project-disk": "40GB",
+      "project-transfer": "1000GB",
+      "project-remote-connections": "1",
+      "project-shared-with": "5"
+    },
+    {
+      "project-title": "SSH terminal",
+      "project-state": "hosted",
+      "project-url": "github.com/codemirror/Codemirror",
+      "project-created": "Oct. 19. 2015",
+      "project-last-opened": "7 days ago",
+      "project-os": "Ubuntu 14.04",
+      "project-cpu": "1",
+      "project-ram": "256MB",
+      "project-disk": "40GB",
+      "project-transfer": "1000GB",
+      "project-remote-connections": "1",
+      "project-shared-with": "5"
+    },
+    {
+      "project-title": "Revisions",
+      "project-state": "hosted",
+      "project-url": "github.com/codemirror/Codemirror",
+      "project-created": "Oct. 19. 2015",
+      "project-last-opened": "7 days ago",
+      "project-os": "Ubuntu 14.04",
+      "project-cpu": "1",
+      "project-ram": "256MB",
+      "project-disk": "40GB",
+      "project-transfer": "1000GB",
+      "project-remote-connections": "1",
+      "project-shared-with": "5"
+    }
+  ],
+
+  "shared-with-me": [
+    {
+      "shared-with-me__name": "test.py",
+      "shared-with-me__created": "March, 24, 2016",
+      "shared-with-me__opened": "Never",
+      "shared-with-me__shared": "jozo.masklin@gmail.com"
+    },
+    {
+      "shared-with-me__name": "my-style.css",
+      "shared-with-me__created": "March, 24, 2016",
+      "shared-with-me__opened": "Never",
+      "shared-with-me__shared": "jozo.masklin@gmail.com"
+    },
+    {
+      "shared-with-me__name": "index.html",
+      "shared-with-me__created": "March, 24, 2016",
+      "shared-with-me__opened": "Never",
+      "shared-with-me__shared": "jozo.masklin@gmail.com"
+    },
+    {
+      "shared-with-me__name": "script.js",
+      "shared-with-me__created": "March, 24, 2016",
+      "shared-with-me__opened": "Never",
+      "shared-with-me__shared": "jozo.masklin@gmail.com"
+    },
+    {
+      "shared-with-me__name": "profile-image.img",
+      "shared-with-me__created": "March, 24, 2016",
+      "shared-with-me__opened": "Never",
+      "shared-with-me__shared": "jozo.masklin@gmail.com"
+    },
+    {
+      "shared-with-me__name": "slider.js",
+      "shared-with-me__created": "March, 24, 2016",
+      "shared-with-me__opened": "Never",
+      "shared-with-me__shared": "jozo.masklin@gmail.com"
+    },
+    {
+      "shared-with-me__name": "about.html",
+      "shared-with-me__created": "March, 24, 2016",
+      "shared-with-me__opened": "Never",
+      "shared-with-me__shared": "jozo.masklin@gmail.com"
+    }
+  ],
+
+  "my-shares": [
+    {
+      "my-shares__name": "my-style.css",
+      "my-shares__created": "March, 24, 2016",
+      "my-shares__opened": "5 days ago",
+      "my-shares__share-link": "https://nekiTamolink/codeanywhre.com/stash/tamoNekiUrl/folder/mate.lopata@gmail.com",
+      "my-shares__shared": "jozo.masklin@gmail.com"
+    },
+    {
+      "my-shares__name": "index.html",
+      "my-shares__created": "March, 24, 2016",
+      "my-shares__opened": "5 days ago",
+      "my-shares__share-link": "https://nekiTamolink/codeanywhre.com/stash/tamoNekiUrl/folder/mate.lopata@gmail.com",
+      "my-shares__shared": "jozo.masklin@gmail.com"
+    },
+    {
+      "my-shares__name": "script.js",
+      "my-shares__created": "March, 24, 2016",
+      "my-shares__opened": "5 days ago",
+      "my-shares__share-link": "https://nekiTamolink/codeanywhre.com/stash/tamoNekiUrl/folder/mate.lopata@gmail.com",
+      "my-shares__shared": "jozo.masklin@gmail.com"
+    },
+    {
+      "my-shares__name": "about.html",
+      "my-shares__created": "March, 24, 2016",
+      "my-shares__opened": "5 days ago",
+      "my-shares__share-link": "https://nekiTamolink/codeanywhre.com/stash/tamoNekiUrl/folder/mate.lopata@gmail.com",
+      "my-shares__shared": "jozo.masklin@gmail.com"
+    },
+    {
+      "my-shares__name": "test.py",
+      "my-shares__created": "March, 24, 2016",
+      "my-shares__opened": "5 days ago",
+      "my-shares__share-link": "https://nekiTamolink/codeanywhre.com/stash/tamoNekiUrl/folder/mate.lopata@gmail.com",
+      "my-shares__shared": "jozo.masklin@gmail.com"
+    }
+  ],
+
+  "ssh-keys": [
+    {
+      "ssh-keys__name": "Default SSH Key",
+      "ssh-keys__keyphrase": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDeqbwzg7asPzWFICzdIf/O/lXD/VoixBkyVjKHTOXIansKKofEu8PvTnAdmU7n2Qt3Kxtyv0ynyTLoKdmC0m/RQ0P/xBRGrpzgHdN45ntA1G2hMGaV45O06EqtUYEHPlY2l9bPEvJtMf4PZY65E6EMz34Go4V1cZRYeoozTqMDonc2q572lyohU9XwNcF8cr6GVXQWGefAlEpjf9yNBZRDoBb3KmCdLV599wcBLW+JTuoKPPsU9Db1xR1ZJULSm04qPtJzlcyV3JiRlDfsWah9PzUMLoumAP3uJ02ncSuqmx23kPf6Z3vb3KajqA+5wo6ZZfnB63bmMrxRr00k91gx codeanywhere-ssh-key"
+    },
+    {
+      "ssh-keys__name": "SSH Key 1",
+      "ssh-keys__keyphrase": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDeqbwzg7asPzWFICzdIf/O/lXD/VoixBkyVjKHTOXIansKKofEu8PvTnAdmU7n2Qt3Kxtyv0ynyTLoKdmC0m/RQ0P/xBRGrpzgHdN45ntA1G2hMGaV45O06EqtUYEHPlY2l9bPEvJtMf4PZY65E6EMz34Go4V1cZRYeoozTqMDonc2q572lyohU9XwNcF8cr6GVXQWGefAlEpjf9yNBZRDoBb3KmCdLV599wcBLW+JTuoKPPsU9Db1xR1ZJULSm04qPtJzlcyV3JiRlDfsWah9PzUMLoumAP3uJ02ncSuqmx23kPf6Z3vb3KajqA+5wo6ZZfnB63bmMrxRr00k91gx codeanywhere-ssh-key"
+    },
+    {
+      "ssh-keys__name": "SSH Key 2",
+      "ssh-keys__keyphrase": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDeqbwzg7asPzWFICzdIf/O/lXD/VoixBkyVjKHTOXIansKKofEu8PvTnAdmU7n2Qt3Kxtyv0ynyTLoKdmC0m/RQ0P/xBRGrpzgHdN45ntA1G2hMGaV45O06EqtUYEHPlY2l9bPEvJtMf4PZY65E6EMz34Go4V1cZRYeoozTqMDonc2q572lyohU9XwNcF8cr6GVXQWGefAlEpjf9yNBZRDoBb3KmCdLV599wcBLW+JTuoKPPsU9Db1xR1ZJULSm04qPtJzlcyV3JiRlDfsWah9PzUMLoumAP3uJ02ncSuqmx23kPf6Z3vb3KajqA+5wo6ZZfnB63bmMrxRr00k91gx codeanywhere-ssh-key"
+    }
+  ],
+
+  "custom-stacks": [
+    {
+      "custom-stacks__title": "Custom stack",
+      "custom-stacks__state": "hosted",
+      "custom-stacks__url": "github.com/codemirror/CustomStack",
+      "custom-stacks__created": "Oct. 19. 2015",
+      "custom-stacks__last-opened": "5 days ago",
+      "custom-stacks__os": "Ubuntu 14.04",
+      "custom-stacks__cpu": "1",
+      "custom-stacks__ram": "256MB",
+      "custom-stacks__disk": "20GB",
+      "custom-stacks__transfer": "1000GB",
+      "custom-stacks__remote-connections": "1",
+      "custom-stacks__shared-with": "5"
+    },
+    {
+      "custom-stacks__title": "Custom stack 2",
+      "custom-stacks__state": "hosted",
+      "custom-stacks__url": "github.com/codemirror/CustomStack",
+      "custom-stacks__created": "Oct. 19. 2015",
+      "custom-stacks__last-opened": "5 days ago",
+      "custom-stacks__os": "Ubuntu 14.04",
+      "custom-stacks__cpu": "1",
+      "custom-stacks__ram": "256MB",
+      "custom-stacks__disk": "20GB",
+      "custom-stacks__transfer": "1000GB",
+      "custom-stacks__remote-connections": "1",
+      "custom-stacks__shared-with": "5"
+    },
+    {
+      "custom-stacks__title": "Custom stack 3",
+      "custom-stacks__state": "hosted",
+      "custom-stacks__url": "github.com/codemirror/CustomStack",
+      "custom-stacks__created": "Oct. 19. 2015",
+      "custom-stacks__last-opened": "5 days ago",
+      "custom-stacks__os": "Ubuntu 14.04",
+      "custom-stacks__cpu": "1",
+      "custom-stacks__ram": "256MB",
+      "custom-stacks__disk": "20GB",
+      "custom-stacks__transfer": "1000GB",
+      "custom-stacks__remote-connections": "1",
+      "custom-stacks__shared-with": "5"
+    }
+  ],
+
+  "custom-domains": [
+    {
+      "custom-domains__user-email": "mate.lopata@gmail.com",
+      "custom-domains__domain-name": "ca.my-web-studio.design",
+      "custom-domains__container": "MyWebStudio",
+      "custom-domains__external-port": "443",
+      "custom-domains__internal-port": "3000"
+    },
+    {
+      "custom-domains__user-email": "mate.lopata@gmail.com",
+      "custom-domains__domain-name": "ca.my-web-studio.design",
+      "custom-domains__container": "MyWebStudio 2",
+      "custom-domains__external-port": "443",
+      "custom-domains__internal-port": "3000"
+    },
+    {
+      "custom-domains__user-email": "mate.lopata@gmail.com",
+      "custom-domains__domain-name": "ca.my-web-studio.design",
+      "custom-domains__container": "MyWebStudio 3",
+      "custom-domains__external-port": "443",
+      "custom-domains__internal-port": "3000"
+    }
+  ],
+
+  "refer-link": "https://codeanywhere.com/refferalsignup/?r=6352356234cd23423c5",
+  "refer-total": "$ 153 USD",
+
+  "referals": [
+    {
+      "referals__email": "username1.test@gmail.com",
+      "referals__date": "03.04.2017",
+      "referals__cost": "$30"
+    },
+    {
+      "referals__email": "username2.test@gmail.com",
+      "referals__date": "03.04.2017",
+      "referals__cost": "$50"
+    },
+    {
+      "referals__email": "username3.test@gmail.com",
+      "referals__date": "03.04.2017",
+      "referals__cost": "$40"
+    }
+  ],
+
+  "dialog-item-name": "someFileName",
+
+  "search-list": [
+    {"search-list__item": "someImput1"},
+    {"search-list__item": "someImput2"},
+    {"search-list__item": "someImput3"},
+    {"search-list__item": "someImput4"},
+    {"search-list__item": "someImput5"},
+    {"search-list__item": "someImput6"},
+    {"search-list__item": "someImput7"}
+  ],
+
+  "search-results": [
+    {
+      "search-results__user-email": "mate.lopata@gmail.com",
+      "search-results__created": "March, 24, 2016",
+      "search-results__platform": "CentOS",
+      "search-results__description": "random text, random text...",
+      "search-results__creator": "mate.lopata@gmail.com"
+    },
+    {
+      "search-results__user-email": "mate.lopata@gmail.com",
+      "search-results__created": "March, 24, 2016",
+      "search-results__platform": "CentOS",
+      "search-results__description": "random text, random text...",
+      "search-results__creator": "mate.lopata@gmail.com"
+    },
+    {
+      "search-results__user-email": "mate.lopata@gmail.com",
+      "search-results__created": "March, 24, 2016",
+      "search-results__platform": "CentOS",
+      "search-results__description": "random text, random text...",
+      "search-results__creator": "mate.lopata@gmail.com"
+    }
+  ],
+
+  "payment__monthly": "$25",
+  "payment__yearly": "$30",
+
+  "payment__plan": "Bussines Plan",
+  "payment__months": "12",
+  "payment__price": "$600.00",
+  "payment__addons": "$60.00",
+  "payment__discount": "-$120.00",
+  "payment__total": "$540.00",
+
+  "addon-price-alwayson": "60",
+  "addon-price-connections": "24",
+  "addon-price-custom-domains": "24",
+  "addon-price-revisions": "20"
+
+}

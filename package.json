@@ -1,0 +1,19 @@
+{
+  "name": "ca-dashboard-template",
+  "version": "1.0.0",
+  "description": "CA Dashboard HTML Template",
+  "main": "index.js",
+  "scripts": {
+    "grunt": "grunt",
+    "watch": "http-server html/template -p 3000 & grunt watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-mustache-render": "^1.9.2",
+    "http-server": "^0.10.0"
+  }
+}

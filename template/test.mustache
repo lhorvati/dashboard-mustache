@@ -1,0 +1,2537 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Codeanywhere Dashboard</title>
+    <meta charset="utf-8">
+    <meta content="" name="description">
+    <meta content="" name="author">
+    <meta content="Codeanywhere, Dashboard, CA, Editor" name="keywords">
+    <meta content="width=device-width; initial-scale=1.0, maximum-scale=1.0" id="meta" name="viewport">
+    <link href="/assets/css/main.css" rel="stylesheet">
+    <link href="/assets/css/balloon.css" rel="stylesheet">
+    <link href="/assets/css/query.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;amp;subset=latin-ext" rel="stylesheet">
+  </head>
+  <body>
+    <!-- /header -->
+    <div id="header">
+      <div class="mobile-header">
+        <div class="mobile-header__btn mobile-nav-open">
+          <svg height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+            <title>
+              Menu
+            </title>
+            <path d="M2 15.5v2h20v-2H2zm0-5v2h20v-2H2zm0-5v2h20v-2H2z"></path>
+          </svg>
+        </div>
+        <div class="mobile-header__title">Account</div>
+        <div class="mobile-header__btn mobile-nav-search">
+          <svg height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+            <title>
+              Find
+            </title>
+            <path d="M12.5 11h-.79l-.28-.27C12.41 9.59 13 8.11 13 6.5 13 2.91 10.09 0 6.5 0S0 2.91 0 6.5 2.91 13 6.5 13c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L17.49 16l-4.99-5zm-6 0C4.01 11 2 8.99 2 6.5S4.01 2 6.5 2 11 4.01 11 6.5 8.99 11 6.5 11z" fill-rule="nonzero" fill="#323232"></path>
+          </svg>
+        </div>
+        <div class="mobile-header__btn profile-btn">
+          <div class="mobile-nav-profile"></div>
+          <!-- /PROFILE POPUP -->
+          <div class="profile">
+            <div class="profile-wrap">
+              <div class="profile-top {{profile-percentage}}">
+                <div class="managed-row">{{managed-by}}</div>
+                <div class="profile-row f-center">
+                  <div class="profile-image">
+                    <div class="profile-image__center">
+                      <span class="profile-image__center--prim">
+                        {{profile-percentage-display}}
+                      </span>
+                      <span class="profile-image__center--sec">Profile</span>
+                      <span class="profile-image__center--sec">completion</span>
+                    </div>
+                  </div>
+                  <div class="profile-pie-left"></div>
+                  <div class="profile-pie-right"></div>
+                </div>
+                <div class="profile-row">
+                  <div class="profile-details">
+                    <div class="profile-details__username">{{account__user-name}} {{account__user-lastname}}</div>
+                    <div class="profile-details__email">{{account__user-email}}</div>
+                  </div>
+                </div>
+                <div class="upgrade-wrap">
+                  <div class="profile-row">
+                    <div class="upgrade-row">
+                      <div class="subscription">
+                        Subscription:
+                        <span>{{subscription-plan}}</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="profile-row">
+                    <div class="upgrade-row {{resource-percentage__containers}}">
+                      <div class="upgrade-row__top">
+                        <div class="upgrade-row__top--bar"></div>
+                      </div>
+                      <div class="upgrade-row__bot">
+                        <div class="upgrade-row__bot--left">
+                          {{resource-num__containers}}
+                        </div>
+                        <div class="upgrade-row__bot--right">Containers</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="profile-row">
+                    <div class="upgrade-row {{resource-percentage__remote}}">
+                      <div class="upgrade-row__top">
+                        <div class="upgrade-row__top--bar"></div>
+                      </div>
+                      <div class="upgrade-row__bot">
+                        <div class="upgrade-row__bot--left">
+                          {{resource-num__remote}}
+                        </div>
+                        <div class="upgrade-row__bot--right">Remote Connections</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="profile-row">
+                    <div class="upgrade-message">Need more resources?</div>
+                  </div>
+                  <div class="profile-row buttons-row">
+                    <div class="profile-button">
+                      <div class="btn btn--purple dialog-upgrade">Upgrade</div>
+                    </div>
+                    <a href="https://codeanywhere.com/signout">
+                      <div class="txt-button">
+                        <div class="btn btn--transparent1">Sign Out</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-jumbo">
+        <div class="header">
+          <div class="header__dashboard">
+            <a href="https://codeanywhere.com/dashboard">Dashboard</a>
+          </div>
+          <div class="header__search">
+            <input class="input-search" placeholder="Search">
+          </div>
+          <div class="profile-btn header__user">
+            <!-- /PROFILE POPUP -->
+            <div class="profile">
+              <div class="profile-wrap">
+                <div class="profile-top {{profile-percentage}}">
+                  <div class="managed-row"></div>
+                  <div class="profile-row f-center">
+                    <div class="profile-image">
+                      <div class="profile-image__center">
+                        <span class="profile-image__center--prim">
+                          {{profile-percentage-display}}
+                        </span>
+                        <span class="profile-image__center--sec">Profile</span>
+                        <span class="profile-image__center--sec">completion</span>
+                      </div>
+                    </div>
+                    <div class="profile-pie-left"></div>
+                    <div class="profile-pie-right"></div>
+                  </div>
+                  <div class="profile-row">
+                    <div class="profile-details">
+                      <div class="profile-details__username">{{account__user-name}} {{account__user-lastname}}</div>
+                      <div class="profile-details__email">{{account__user-email}}</div>
+                    </div>
+                  </div>
+                  <div class="upgrade-wrap">
+                    <div class="profile-row">
+                      <div class="upgrade-row">
+                        <div class="subscription">
+                          Subscription:
+                          <span>{{subscription-plan}}</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="profile-row">
+                      <div class="upgrade-row {{resource-percentage__containers}}">
+                        <div class="upgrade-row__top">
+                          <div class="upgrade-row__top--bar"></div>
+                        </div>
+                        <div class="upgrade-row__bot">
+                          <div class="upgrade-row__bot--left">
+                            {{resource-num__containers}}
+                          </div>
+                          <div class="upgrade-row__bot--right">Containers</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="profile-row">
+                      <div class="upgrade-row {{resource-percentage__remote}}">
+                        <div class="upgrade-row__top">
+                          <div class="upgrade-row__top--bar"></div>
+                        </div>
+                        <div class="upgrade-row__bot">
+                          <div class="upgrade-row__bot--left">
+                            {{resource-num__remote}}
+                          </div>
+                          <div class="upgrade-row__bot--right">Remote Connections</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="profile-row">
+                      <div class="upgrade-message">Need more resources?</div>
+                    </div>
+                    <div class="profile-row buttons-row">
+                      <div class="profile-button">
+                        <div class="btn btn--purple dialog-upgrade">Upgrade</div>
+                      </div>
+                      <a href="https://codeanywhere.com/signout">
+                        <div class="txt-button">
+                          <div class="btn btn--transparent1">Sign Out</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="body">
+      <!-- /Side Nav -->
+      <nav class="side-nav">
+        <div class="mobile-nav-close">
+          <svg height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+          </svg>
+        </div>
+        <ul>
+          <li>
+            <a class="side-nav-link account active" href="#">Account</a>
+          </li>
+          <li>
+            <a class="side-nav-link billing" href="#">Billing</a>
+          </li>
+          <li>
+            <a class="side-nav-link projects" href="#">Projects</a>
+          </li>
+          <li>
+            <a class="side-nav-link shared-with-me" href="#">Shared with me</a>
+          </li>
+          <li>
+            <a class="side-nav-link my-shares" href="#">My shares</a>
+          </li>
+          <li>
+            <a class="side-nav-link ssh-keys" href="#">SSH keys</a>
+          </li>
+          <li>
+            <a class="side-nav-link custom-stacks" href="#">Custom stacks</a>
+          </li>
+          <li>
+            <a class="side-nav-link custom-domains" href="#">Custom domains</a>
+          </li>
+          <li>
+            <a class="side-nav-link refer-friend" href="#">Refer a friend</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /MAIN SECTION - ACCOUNT *********************************** -->
+      <div class="main account show-flex">
+        <div class="main__col2">
+          <!-- /ACCOUNT INFORMATION ================ -->
+          <div class="card-wrap">
+            <h1>Account information</h1>
+            <div class="card information">
+              <div class="card__section col">
+                <!-- /user -->
+                <div class="user">
+                  <div class="user__image">
+                    <img src="{{account__user-image-url}}">
+                    <a href="" class="edit-photo hide">Edit photo</a>
+                  </div>
+                  <div class="user__details">
+                    <div class="user__name">
+                      <span class="title--large">{{account__user-name}} {{account__user-lastname}}</span>
+                    </div>
+                    <div class="user__email">
+                      <span>{{account__user-email}}</span>
+                    </div>
+                    <div class="user__company">
+                      <span>{{account__user-company}}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__abs-bot row">
+                <button class="btn-icon" data-balloon-pos="up" data-balloon="Edit" id="account">
+                  <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="hide" id="user-details-wrap">
+                <div class="card__section col">
+                  <!-- /user-details -->
+                  <div class="user-details">
+                    <div class="input-wrap first-name">
+                      <div class="mui-input">
+                        <div class="group">
+                          <input name="" required="" type="text">
+                          <span class="bar"></span>
+                          <label>First name</label>
+                        </div>
+                        <span class="error"></span>
+                      </div>
+                    </div>
+                    <div class="input-wrap last-name">
+                      <div class="mui-input">
+                        <div class="group">
+                          <input name="" required="" type="text">
+                          <span class="bar"></span>
+                          <label>Last name</label>
+                        </div>
+                        <span class="error"></span>
+                      </div>
+                    </div>
+                    <div class="input-wrap company">
+                      <div class="mui-input">
+                        <div class="group">
+                          <input name="" required="" type="text">
+                          <span class="bar"></span>
+                          <label>Company</label>
+                        </div>
+                        <span class="error"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__section col border-top">
+                  <div class="email">
+                    <span class="title--gray">Update email address</span>
+                    <div class="input-wrap new-email">
+                      <div class="mui-input">
+                        <div class="group">
+                          <input name="" required="" type="text">
+                          <span class="bar"></span>
+                          <label>New email address</label>
+                        </div>
+                        <span class="error"></span>
+                      </div>
+                    </div>
+                    <div class="input-wrap repeat-email">
+                      <div class="mui-input">
+                        <div class="group">
+                          <input name="" required="" type="text">
+                          <span class="bar"></span>
+                          <label>Please enter passowrd to confirm</label>
+                        </div>
+                        <span class="error"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__section">
+                  <div class="card-footer">
+                    <div class="user-details-close btn btn--transparent1">Cancel</div>
+                    <a class="btn btn--transparent1" href="#">Save</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /CONNECTED ACCOUNTS ================ -->
+          <div class="card-wrap">
+            <h1>Connected accounts</h1>
+            <div class="card accounts">
+              <div class="card__section col no-padding">
+                <!-- /account-item GITHUB -->
+                <div class="acc-item github">
+                  <div class="acc-item__acc">
+                    <div class="acc-item__image">
+                      <svg height="293" viewbox="0 0 300 293" width="300" xmlns="http://www.w3.org/2000/svg">
+                        <title>
+                          Github logo
+                        </title>
+                        <path d="M150.001 0C67.17 0 0 67.156 0 150.001c0 66.275 42.98 122.502 102.58 142.336 7.497 1.389 10.249-3.254 10.249-7.216 0-3.577-.14-15.393-.204-27.927-41.73 9.074-50.536-17.698-50.536-17.698-6.823-17.338-16.655-21.948-16.655-21.948-13.61-9.31 1.026-9.12 1.026-9.12 15.063 1.06 22.994 15.459 22.994 15.459 13.379 22.931 35.09 16.302 43.65 12.469 1.347-9.695 5.234-16.312 9.524-20.058-33.317-3.793-68.341-16.655-68.341-74.131 0-16.377 5.86-29.758 15.455-40.263-1.557-3.778-6.692-19.034 1.453-39.696 0 0 12.596-4.031 41.261 15.376 11.965-3.324 24.798-4.99 37.545-5.047 12.748.057 25.59 1.723 37.578 5.047 28.63-19.407 41.208-15.376 41.208-15.376 8.165 20.662 3.028 35.918 1.47 39.696 9.619 10.505 15.439 23.886 15.439 40.263 0 57.613-35.091 70.298-68.493 74.012 5.38 4.655 10.174 13.783 10.174 27.778 0 20.07-.174 36.224-.174 41.164 0 3.992 2.7 8.67 10.304 7.196C257.075 272.46 300 216.253 300 150.001 300 67.156 232.841 0 150.001 0zm-93.82 213.68c-.331.745-1.503.969-2.572.457-1.088-.49-1.699-1.505-1.346-2.253.323-.768 1.498-.981 2.583-.467 1.09.49 1.712 1.515 1.334 2.263zm7.378 6.584c-.716.663-2.114.355-3.063-.693-.981-1.046-1.165-2.445-.44-3.118.738-.663 2.094-.353 3.078.693.981 1.058 1.172 2.447.425 3.118zm5.062 8.423c-.92.639-2.422.04-3.351-1.294-.92-1.334-.92-2.934.02-3.574.931-.641 2.412-.065 3.353 1.259.917 1.356.917 2.956-.022 3.61zm8.56 9.756c-.822.906-2.573.663-3.855-.574-1.311-1.21-1.676-2.926-.852-3.833.832-.909 2.593-.653 3.885.574 1.302 1.207 1.7 2.936.822 3.833zm11.064 3.293c-.363 1.175-2.05 1.71-3.748 1.21-1.697-.514-2.807-1.89-2.464-3.078.352-1.182 2.047-1.739 3.758-1.204 1.694.511 2.807 1.877 2.454 3.072zm12.591 1.397c.042 1.237-1.398 2.263-3.182 2.285-1.793.04-3.244-.96-3.264-2.178 0-1.25 1.409-2.265 3.202-2.295 1.784-.035 3.244.959 3.244 2.188zm12.37-.474c.213 1.207-1.026 2.447-2.797 2.777-1.742.318-3.354-.427-3.575-1.624-.216-1.237 1.046-2.477 2.785-2.797 1.773-.308 3.36.417 3.587 1.644z" fill-rule="nonzero" fill="#757575"></path>
+                      </svg>
+                    </div>
+                    <div class="acc-item__name">
+                      Github
+                    </div>
+                    <div class="acc-item__button">
+                      <a class="pink" href="#">Connect</a>
+                    </div>
+                  </div>
+                  <div class="acc-item__list">
+                    {{#github__acc-list}}
+                      <div>
+                        <div class="acc-item__name">
+                          {{github__acc-list-name}}
+                        </div>
+                        <div class="acc-item__button">
+                          <a class="pink" href="#">Disconnect</a>
+                        </div>
+                      </div>
+                    {{/github__acc-list}}
+                  </div>
+                </div>
+                <!-- /account-item BITBUCKET -->
+                <div class="acc-item bitbucket">
+                  <div class="acc-item__acc">
+                    <div class="acc-item__image">
+                      <svg height="300" viewbox="0 0 261 300" width="261" xmlns="http://www.w3.org/2000/svg">
+                        <title>
+                          Bitbucket logo
+                        </title>
+                        <g fill-rule="nonzero" fill="#757575">
+                          <path d="M130.17 0C58.71 0 .011 19.14.011 43.386c0 6.38 15.313 96.98 21.693 132.71 2.552 16.588 44.662 39.557 108.464 39.557 63.803 0 104.637-22.969 108.465-39.557 6.38-35.73 21.693-126.33 21.693-132.71C259.051 19.14 201.63 0 130.17 0zm0 186.304c-22.97 0-40.834-17.865-40.834-40.834 0-22.969 17.864-40.833 40.833-40.833 22.97 0 40.834 17.864 40.834 40.833 0 21.693-17.865 40.834-40.834 40.834zm0-130.158c-45.939 0-82.944-7.656-82.944-17.864 0-10.209 37.005-17.865 82.943-17.865 45.938 0 82.944 7.656 82.944 17.865 0 10.208-37.006 17.864-82.944 17.864z"></path>
+                          <path d="M224.347 210.55c-2.552 0-3.828 1.275-3.828 1.275s-31.901 25.521-89.324 25.521c-57.422 0-89.324-25.52-89.324-25.52s-2.552-1.277-3.828-1.277c-2.552 0-5.104 1.276-5.104 5.104v1.276c5.104 26.798 8.932 45.938 8.932 48.49 3.829 19.141 42.11 34.454 88.048 34.454s84.22-15.313 88.048-34.453c0-2.553 3.828-21.693 8.932-48.49v-1.277c1.276-2.552 0-5.104-2.552-5.104z"></path>
+                          <ellipse cx="130.169" cy="144.194" rx="20.417" ry="20.417"></ellipse>
+                        </g>
+                      </svg>
+                    </div>
+                    <div class="acc-item__name">
+                      Bitbucket
+                    </div>
+                    <div class="acc-item__button">
+                      <a class="pink" href="#">Connect</a>
+                    </div>
+                  </div>
+                  <div class="acc-item__list">
+                    {{#bitbucket__acc-list}}
+                      <div>
+                        <div class="acc-item__name">
+                          {{bitbucket__acc-list-name}}
+                        </div>
+                        <div class="acc-item__button">
+                          <a class="pink" href="#">Disconnect</a>
+                        </div>
+                      </div>
+                    {{/bitbucket__acc-list}}
+                  </div>
+                </div>
+                <!-- /account-item GOOGLE -->
+                <div class="acc-item google">
+                  <div class="acc-item__acc">
+                    <div class="acc-item__image">
+                      <svg height="300" viewbox="0 0 294 300" width="294" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                        <title>
+                          Google logo
+                        </title>
+                        <defs>
+                          <path d="M289.773 122.727H150v57.955h80.455c-7.5 36.818-38.864 57.954-80.455 57.954-49.09 0-88.636-39.545-88.636-88.636 0-49.09 39.545-88.636 88.636-88.636 21.136 0 40.227 7.5 55.227 19.772L248.864 37.5C222.273 14.318 188.182 0 150 0 66.818 0 0 66.818 0 150s66.818 150 150 150c75 0 143.182-54.545 143.182-150 0-8.864-1.364-18.41-3.41-27.273z" id="a"></path>
+                        </defs>
+                        <use fill-rule="evenodd" fill="#757575" xlink:href="#a"></use>
+                      </svg>
+                    </div>
+                    <div class="acc-item__name">
+                      Google
+                    </div>
+                    <div class="acc-item__button">
+                      <a class="pink" href="#">Connect</a>
+                    </div>
+                  </div>
+                  <div class="acc-item__list">
+                    {{#google__acc-list}}
+                      <div>
+                        <div class="acc-item__name">
+                          {{google__acc-list-name}}
+                        </div>
+                        <div class="acc-item__button">
+                          <a class="pink" href="#">Disconnect</a>
+                        </div>
+                      </div>
+                    {{/google__acc-list}}
+                  </div>
+                </div>
+                <!-- /account-item FACEBOOK -->
+                <div class="acc-item facebook">
+                  <div class="acc-item__acc">
+                    <div class="acc-item__image">
+                      <svg height="299" viewbox="0 0 299 299" width="299" xmlns="http://www.w3.org/2000/svg">
+                        <title>
+                          Facebook logo
+                        </title>
+                        <g fill-rule="nonzero" fill="none">
+                          <path d="M282.34 298.834c9.107 0 16.493-7.385 16.493-16.493V16.493C298.833 7.383 291.447 0 282.34 0H16.493C7.383 0 0 7.383 0 16.493v265.848c0 9.108 7.382 16.493 16.493 16.493H282.34" fill="#757575"></path>
+                          <path d="M206.189 298.834V183.11h38.844l5.816-45.1h-44.66v-28.795c0-13.057 3.627-21.956 22.351-21.956l23.883-.01V46.912c-4.133-.55-18.309-1.778-34.8-1.778-34.434 0-58.007 21.018-58.007 59.616v33.26h-38.944v45.1h38.944v115.724h46.573" fill="#FFF"></path>
+                        </g>
+                      </svg>
+                    </div>
+                    <div class="acc-item__name">
+                      Facebook
+                    </div>
+                    <div class="acc-item__button">
+                      <a class="pink" href="#">Connect</a>
+                    </div>
+                  </div>
+                  <div class="acc-item__list">
+                    {{#facebook__acc-list}}
+                      <div>
+                        <div class="acc-item__name">
+                          {{facebook__acc-list-name}}
+                        </div>
+                        <div class="acc-item__button">
+                          <a class="pink" href="#">Disconnect</a>
+                        </div>
+                      </div>
+                    {{/facebook__acc-list}}
+                  </div>
+                </div>
+                <!-- /account-item DIGITAL OCEAN -->
+                <div class="acc-item digitalocean">
+                  <div class="acc-item__acc">
+                    <div class="acc-item__image">
+                      <svg height="299" viewbox="0 0 299 299" width="299" xmlns="http://www.w3.org/2000/svg">
+                        <title>
+                          Digital Ocean logo
+                        </title>
+                        <g fill-rule="evenodd" fill="#757575">
+                          <path d="M149.543 298.332v-57.666c61.194 0 108.51-60.566 85.149-124.9-8.654-23.83-27.662-42.835-51.493-51.483-64.326-23.341-124.876 23.961-124.884 85.144 0 0-.007.015-.015.015H.65c0-97.491 94.185-173.401 196.345-141.51 44.645 13.937 80.12 49.411 94.056 94.056 31.891 102.16-44.017 196.344-141.508 196.344"></path>
+                          <path d="M149.674 240.813H92.18v-57.475s.006-.008.01-.008h57.474c.005 0 .01.003.01.003v57.48M92.17 284.988H48.01l-.01-.01v-44.165h44.18v44.165s-.005.01-.01.01M48.03 240.813H11.012c-.015 0-.027-.01-.027-.01v-37.002s.012-.027.027-.027h36.993c.015 0 .027.011.027.011v37.028"></path>
+                        </g>
+                      </svg>
+                    </div>
+                    <div class="acc-item__name">
+                      Digital Ocean
+                    </div>
+                    <div class="acc-item__button">
+                      <a class="pink" href="#">Connect</a>
+                    </div>
+                  </div>
+                  <div class="acc-item__list">
+                    {{#do__acc-list}}
+                      <div>
+                        <div class="acc-item__name">
+                          {{do__acc-list-name}}
+                        </div>
+                        <div class="acc-item__button">
+                          <a class="pink" href="#">Disconnect</a>
+                        </div>
+                      </div>
+                    {{/do__acc-list}}
+                  </div>
+                </div>
+                <!-- /account-item ONEDRIVE -->
+                <div class="acc-item onedrive">
+                  <div class="acc-item__acc">
+                    <div class="acc-item__image">
+                      <svg height="178" viewbox="0 0 300 178" width="300" xmlns="http://www.w3.org/2000/svg">
+                        <title>
+                          OneDrive logo
+                        </title>
+                        <g fill-rule="nonzero" fill="#757575">
+                          <path d="M97.059 176.03c-18.117-4.526-28.21-18.927-28.242-40.295-.01-6.831.484-10.105 2.189-14.499 4.18-10.77 15.247-18.896 29.81-21.887 7.246-1.488 9.478-3.086 9.478-6.785 0-1.16.863-4.617 1.917-7.68 4.788-13.919 13.654-25.522 23.128-30.268 9.916-4.968 14.922-6.088 26.916-6.023 17.034.091 25.533 3.786 37.42 16.27l6.537 6.865 5.856-2.027c28.344-9.809 56.6 6.889 58.878 34.793l.623 7.634 5.581 2c15.94 5.71 23.433 17.703 22.074 35.333-.888 11.529-6.278 20.733-14.817 25.302l-4.015 2.149-89.215.172c-68.558.132-90.351-.112-94.118-1.053z"></path>
+                          <path d="M30.178 163.706C19.6 161.193 8.395 151.851 3.139 141.168.16 135.108 0 134.217 0 123.496c0-10.197.254-11.833 2.628-16.896C7.63 95.926 17.215 88.214 29.242 85.185c2.538-.639 4.923-1.659 5.3-2.267.377-.607.796-3.918.93-7.356.837-21.355 14.849-40.171 34.413-46.214 10.57-3.265 23.85-2.462 35.346 2.138 3.646 1.458 3.236 1.771 10.946-8.338 4.559-5.979 13.772-13.414 21.313-17.202C145.629 1.86 154.093-.024 164.216 0c28.291.07 52.674 17.766 61.69 44.773 2.88 8.629 2.737 11.045-.66 11.117-1.484.03-5.732.847-9.443 1.814l-6.745 1.759-6.155-6.156c-17.355-17.354-45.678-21.105-69.756-9.238-9.619 4.741-17.349 11.548-23.187 20.418-4.163 6.324-9.47 18.121-9.47 21.05 0 2.078-1.682 3.117-8.868 5.473-22.247 7.296-35.232 24.145-35.223 45.706.003 7.847 2.024 17.449 4.83 22.948 1.057 2.073 1.647 4.045 1.31 4.381-.86.86-28.535.57-32.361-.339z"></path>
+                        </g>
+                      </svg>
+                    </div>
+                    <div class="acc-item__name">
+                      One Drive
+                    </div>
+                    <div class="acc-item__button">
+                      <a class="pink" href="#">Connect</a>
+                    </div>
+                  </div>
+                  <div class="acc-item__list">
+                    {{#onedrive__acc-list}}
+                      <div>
+                        <div class="acc-item__name">
+                          {{onedrive__acc-list-name}}
+                        </div>
+                        <div class="acc-item__button">
+                          <a class="pink" href="#">Disconnect</a>
+                        </div>
+                      </div>
+                    {{/onedrive__acc-list}}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main__col2">
+          <!-- /PROFILE COMPLETION ================ -->
+          <div class="card-wrap">
+            <h1>Profile completion</h1>
+            <div class="card profile-details">
+              <div class="card__section row">
+                <!-- /graph -->
+                <div class="graph {{profile-percentage}}">
+                  <div class="graph__circle-in">
+                    {{profile-percentage-display}}
+                  </div>
+                  <div class="graph__circle-out--left"></div>
+                  <div class="graph__circle-out--right"></div>
+                </div>
+                <!-- /steps -->
+                <div class="steps">
+                  <h2 class="gray">Follow these steps to complete your profile:</h2>
+                  <ul>
+                    {{#steps}}
+                      <li>{{steps-name}}</li>
+                    {{/steps}}
+                    {{^steps}}
+                      <li>All steps are completed!</li>
+                    {{/steps}}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /NEED MORE RESOURCES ================ -->
+          <div class="card-wrap">
+            <h1>Need more resources?</h1>
+            <div class="card resources">
+              <div class="card__section col">
+                <div class="card-title2 center">{{subscription-plan}}</div>
+                <!-- /resource containers -->
+                <div class="resource containers {{resource-percentage__containers}}">
+                  <div class="resource__top">
+                    <div class="resource__bar"></div>
+                  </div>
+                  <div class="resource__bot">
+                    <div class="resource__num">
+                      {{resource-num__containers}}
+                    </div>
+                    <div class="resource__name">
+                      Containers
+                    </div>
+                  </div>
+                </div>
+                <!-- /resource remote connections -->
+                <div class="resource remote {{resource-percentage__remote}}">
+                  <div class="resource__top">
+                    <div class="resource__bar"></div>
+                  </div>
+                  <div class="resource__bot">
+                    <div class="resource__num">
+                      {{resource-num__remote}}
+                    </div>
+                    <div class="resource__name">
+                      Remote Connections
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__section">
+                <div class="card-footer">
+                  <div class="btn btn--purple dialog-upgrade">Upgrade</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /CHANGE PASSOWRD ================ -->
+          <div class="card-wrap">
+            <h1>Change passowrd?</h1>
+            <div class="card password">
+              <div class="card__section col">
+                <div class="input-wrap old-pass">
+                  <div class="mui-input">
+                    <div class="group">
+                      <input name="" required="" type="text">
+                      <span class="bar"></span>
+                      <label>Old password</label>
+                    </div>
+                    <span class="error"></span>
+                  </div>
+                </div>
+                <div class="input-wrap new-pass">
+                  <div class="mui-input">
+                    <div class="group">
+                      <input name="" required="" type="text">
+                      <span class="bar"></span>
+                      <label>New password</label>
+                    </div>
+                    <span class="error"></span>
+                  </div>
+                </div>
+                <div class="input-wrap repeat-pass">
+                  <div class="mui-input">
+                    <div class="group">
+                      <input name="" required="" type="text">
+                      <span class="bar"></span>
+                      <label>Confirm new password</label>
+                    </div>
+                    <span class="error"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="card__section">
+                <div class="card-footer">
+                  <div class="btn btn--transparent1 dialog-edit">Change</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /DELETE YOUR ACCOUNT ================ -->
+          <div class="card-wrap">
+            <h1>Delete your account?</h1>
+            <div class="card delete">
+              <div class="card__section col">
+                <span>This action is permanent and cannot be undone!</span>
+                <p>Are you sure?</p>
+              </div>
+              <div class="card__section">
+                <div class="card-footer">
+                  <div class="btn btn--red dialog-remove">Delete</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /MAIN SECTION - BILLING *********************************** -->
+      <div class="main billing hide">
+        <div class="main__col2">
+          <!-- /SUBSCRIPTIONS ================ -->
+          <div class="card-wrap">
+            <h1>Subscriptions</h1>
+            <div class="card subscription">
+              <div class="card__section row">
+                <div class="sub-wrap">
+                  <!-- /plan left -->
+                  <div class="sub">
+                    <div class="sub__name">
+                      {{subscription-plan}}
+                    </div>
+                    <div class="sub__total">
+                      {{billing__subscription-total}}
+                    </div>
+                    <div class="sub__total-desc">
+                      Total Cost
+                    </div>
+                    <div class="sub__btn">
+                      <div class="btn btn--purple dialog-upgrade">Upgrade</div>
+                    </div>
+                  </div>
+                  <!-- /plan right -->
+                  <div class="sub">
+                    <div class="sub-row">
+                      <div class="sub__item">Status:</div>
+                      <div class="sub__value">{{billing__subscription-status}}</div>
+                    </div>
+                    <div class="sub-row">
+                      <div class="sub__item">Quantity:</div>
+                      <div class="sub__value">{{billing__subscription-quantity}}</div>
+                    </div>
+                    <div class="sub-row">
+                      <div class="sub__item">Start date:</div>
+                      <div class="sub__value">{{billing__subscription-start-date}}</div>
+                    </div>
+                    <div class="sub-row">
+                      <div class="sub__item">Invoice ID:</div>
+                      <div class="sub__value">{{billing__subscription-invoice-id}}</div>
+                    </div>
+                    <div class="sub-row">
+                      <div class="sub__item">Recuring date:</div>
+                      <div class="sub__value">{{billing__subscription-recuring-date}}</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /MANAGE ACCOUNTS ================ -->
+          <div class="card-wrap">
+            <h1>Manage accounts</h1>
+            <div class="card manage-accounts">
+              <div class="card__section col">
+                <!-- /manage accounts - TH -->
+                <div class="manage-accounts-row">
+                  <div class="manage-accounts__name">
+                    <span>email</span>
+                  </div>
+                  <div class="manage-accounts__col">
+                    <span>container <br> always on</span>
+                  </div>
+                  <div class="manage-accounts__col">
+                    <span>unlimited <br> revisions</span>
+                  </div>
+                  <div class="manage-accounts__col">
+                    <span>additional 15 remote connections</span>
+                  </div>
+                  <div class="manage-accounts__delete"></div>
+                </div>
+
+                {{#manage-accounts}}
+                  <div class="manage-accounts-row">
+                    <div class="manage-accounts__name">
+                      {{manage-account-name}}
+                    </div>
+                    <div class="manage-accounts__col">
+                      <div class="counter">
+                        <div class="counter__top" id="up">
+                          <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 5v14l11-7z"></path>
+                          </svg>
+                        </div>
+                        <div class="counter__mid" id="mid">
+                          {{manage-account-always-on}}
+                        </div>
+                        <div class="counter__bot" id="down">
+                          <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 5v14l11-7z"></path>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="manage-accounts__col">
+                      <div class="counter">
+                        <div class="counter__top">
+                          <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 5v14l11-7z"></path>
+                          </svg>
+                        </div>
+                        <div class="counter__mid">
+                          {{manage-account-revisions}}
+                        </div>
+                        <div class="counter__bot">
+                          <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 5v14l11-7z"></path>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="manage-accounts__col">
+                      <div class="counter">
+                        <div class="counter__top">
+                          <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 5v14l11-7z"></path>
+                          </svg>
+                        </div>
+                        <div class="counter__mid">
+                          {{manage-account-remote-connections}}
+                        </div>
+                        <div class="counter__bot">
+                          <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 5v14l11-7z"></path>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="manage-accounts__delete">
+                      <button class="btn-icon" data-balloon-pos="up" data-balloon="Delete">
+                        <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                {{/manage-accounts}}
+
+              </div>
+              <div class="card__section row border-top">
+                <div class="card-footer">
+                  <button class="btn btn--transparent2 dialog-add-acc">Add account</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /ADDONS ================ -->
+          <div class="card-wrap">
+            <h1>Addons</h1>
+            <div class="card addons">
+              <div class="card__section col">
+                <!-- /manage accounts - TH -->
+                <div class="manage-accounts-row">
+                  <div class="manage-accounts__name">
+                    <span>Addon name</span>
+                  </div>
+                  <div class="manage-accounts__col">
+                    <span>Quantity</span>
+                  </div>
+                  <div class="manage-accounts__col">
+                    <span>Assign</span>
+                  </div>
+                  <div class="manage-accounts__col">
+                    <span>Unassign</span>
+                  </div>
+                </div>
+
+                {{#addons-list}}
+                  <div class="manage-accounts-row">
+                    <div class="manage-accounts__name">
+                      {{addons-name}}
+                    </div>
+                    <div class="manage-accounts__col">
+                      {{addons-quantity}}
+                    </div>
+                    <div class="manage-accounts__col">
+                      {{addons-assign}}
+                    </div>
+                    <div class="manage-accounts__col">
+                      {{addons-unassign}}
+                    </div>
+                  </div>
+                {{/addons-list}}
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main__col2">
+          <!-- /BILLING INFORMATIONS ================ -->
+          <div class="card-wrap">
+            <h1>Billing informations</h1>
+            <div class="card billing-information">
+              <div class="card__section col">
+                <div class="billing-information__name">
+                  {{billing-info-name}}
+                </div>
+                <div class="billing-information__card">
+                  {{billing-info-card}}
+                </div>
+                <div class="card__abs-bot row">
+                  <button class="btn-icon" data-balloon-pos="up" data-balloon="Edit" id="billing">
+                    <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
+                    </svg>
+                  </button>
+                </div>
+                <div class="billing-information__expand hide">
+                  <div class="billing-info">
+                    <div class="card-title">Billing information</div>
+                    <div class="card-row2">
+                      <div class="input-wrap first-name">
+                        <div class="mui-input">
+                          <div class="group">
+                            <input name="" required="" type="text">
+                            <span class="bar"></span>
+                            <label>First Name</label>
+                          </div>
+                          <span class="error"></span>
+                        </div>
+                      </div>
+                      <div class="input-wrap last-name">
+                        <div class="mui-input">
+                          <div class="group">
+                            <input name="" required="" type="text">
+                            <span class="bar"></span>
+                            <label>Last Name</label>
+                          </div>
+                          <span class="error"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="input-wrap phone">
+                      <div class="mui-input">
+                        <div class="group">
+                          <input name="" required="" type="number">
+                          <span class="bar"></span>
+                          <label>Phone Number</label>
+                        </div>
+                        <span class="error"></span>
+                      </div>
+                    </div>
+                    <div class="input-wrap vat">
+                      <div class="mui-input">
+                        <div class="group">
+                          <input name="" required="" type="number">
+                          <span class="bar"></span>
+                          <label>VAT Number</label>
+                        </div>
+                        <span class="error"></span>
+                      </div>
+                    </div>
+                    <div class="input-wrap credit-card">
+                      <div class="mui-input">
+                        <div class="group">
+                          <input name="" required="" type="number">
+                          <span class="bar"></span>
+                          <label>Credit Card Number</label>
+                        </div>
+                        <span class="error"></span>
+                      </div>
+                    </div>
+                    <div class="card-row3">
+                      <div class="input-wrap card-date">
+                        <div class="mui-select">
+                          <select>
+                            <option selected="selected">01 - January</option>
+                            <option>02 - February</option>
+                            <option>03 - March</option>
+                            <option>04 - April</option>
+                            <option>05 - May</option>
+                            <option>06 - June</option>
+                            <option>07 - July</option>
+                            <option>08 - August</option>
+                            <option>09 - September</option>
+                            <option>10 - October</option>
+                            <option>11 - November</option>
+                            <option>12 - December</option>
+                          </select>
+                          <span class="bar"></span>
+                        </div>
+                      </div>
+                      <div class="input-wrap card-year">
+                        <div class="mui-select">
+                          <select>
+                            <option selected="selected">2017</option>
+                            <option>2018</option>
+                            <option>2019</option>
+                            <option>2020</option>
+                            <option>2021</option>
+                            <option>2022</option>
+                            <option>2023</option>
+                            <option>2024</option>
+                            <option>2025</option>
+                            <option>2026</option>
+                            <option>2027</option>
+                            <option>2028</option>
+                            <option>2029</option>
+                            <option>2030</option>
+                            <option>2031</option>
+                            <option>2032</option>
+                            <option>2033</option>
+                            <option>2034</option>
+                            <option>2035</option>
+                          </select>
+                          <span class="bar"></span>
+                        </div>
+                      </div>
+                      <div class="input-wrap card-cvv">
+                        <div class="mui-input">
+                          <div class="group">
+                            <input name="" required="" type="number">
+                            <span class="bar"></span>
+                            <label>CVV</label>
+                          </div>
+                          <span class="error"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="address-info">
+                    <div class="card-title">Address information</div>
+                    <div class="card-row2">
+                      <div class="input-wrap address">
+                        <div class="mui-input">
+                          <div class="group">
+                            <input name="" required="" type="text">
+                            <span class="bar"></span>
+                            <label>Address</label>
+                          </div>
+                          <span class="error"></span>
+                        </div>
+                      </div>
+                      <div class="input-wrap address2">
+                        <div class="mui-input">
+                          <div class="group">
+                            <input name="" required="" type="text">
+                            <span class="bar"></span>
+                            <label>Address 2</label>
+                          </div>
+                          <span class="error"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="input-wrap city">
+                      <div class="mui-input">
+                        <div class="group">
+                          <input name="" required="" type="text">
+                          <span class="bar"></span>
+                          <label>City</label>
+                        </div>
+                        <span class="error"></span>
+                      </div>
+                    </div>
+                    <div class="card-row2">
+                      <div class="input-wrap state">
+                        <div class="mui-input">
+                          <div class="group">
+                            <input name="" required="" type="text">
+                            <span class="bar"></span>
+                            <label>State/Province</label>
+                          </div>
+                          <span class="error"></span>
+                        </div>
+                      </div>
+                      <div class="input-wrap zip">
+                        <div class="mui-input">
+                          <div class="group">
+                            <input name="" required="" type="number">
+                            <span class="bar"></span>
+                            <label>Zip/Postal Code</label>
+                          </div>
+                          <span class="error"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="input-wrap country">
+                      <div class="mui-select">
+                        <select>
+                          <option selected="selected">Croatia</option>
+                          <option>Bosna i Hercegovina</option>
+                          <option>Slovenia</option>
+                        </select>
+                        <span class="bar"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__section hide" id="billing-footer">
+                <div class="card-footer">
+                  <div class="btn btn--purple billing-update">Update</div>
+                  <div class="btn btn-transparent billing-close">Close</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /INVOICES ================ -->
+          <div class="card-wrap">
+            <h1>Invoices</h1>
+            <div class="card invoices">
+              <div class="card__section col">
+                <!-- /manage accounts - TH -->
+                <div class="manage-accounts-row">
+                  <div class="manage-accounts__col">
+                    <span>Number</span>
+                  </div>
+                  <div class="manage-accounts__col">
+                    <span>Billed on</span>
+                  </div>
+                  <div class="manage-accounts__col">
+                    <span>Due on</span>
+                  </div>
+                  <div class="manage-accounts__col">
+                    <span>Status</span>
+                  </div>
+                  <div class="manage-accounts__col">
+                    <span>Total</span>
+                  </div>
+                </div>
+
+                {{#invoices-list}}
+                  <div class="manage-accounts-row">
+                    <div class="manage-accounts__col">
+                      {{invoice-id}}
+                    </div>
+                    <div class="manage-accounts__col">
+                      {{invoice-billed-on}}
+                    </div>
+                    <div class="manage-accounts__col">
+                      {{invoice-due-on}}
+                    </div>
+                    <div class="manage-accounts__col">
+                      {{invoice-status}}
+                    </div>
+                    <div class="manage-accounts__col">
+                      {{invoice-total}}
+                    </div>
+                  </div>
+                {{/invoices-list}}
+
+              </div>
+            </div>
+          </div>
+          <!-- /2-FACTOR AUTENTIFICATION ================ -->
+          <div class="card-wrap">
+            <h1>2-Factor Autentification</h1>
+            <div class="card two-factor">
+              <div class="card__section row">
+                <div class="two-factor__txt">
+                  Enable 2-Factor Authentification
+                </div>
+                <div class="two-factor__btn">
+                  <div class="switch">
+                    <input class="toggle toggle-round" id="toggle-1" type="checkbox">
+                    <label for="toggle-1"></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /MAIN SECTION - PROJECTS *********************************** -->
+      <div class="main projects hide">
+        <h1 class="card-title">Plan Info</h1>
+        <div class="main__row">
+          <div class="main__row-item">
+            <!-- /PLAN INFO ================ -->
+            <div class="card-wrap">
+              <div class="card plan-info">
+                <div class="card__section col">
+                  <div class="card-title3">Type: {{subscription-plan}}</div>
+                  <div class="row">
+                    <!-- /resource Containers -->
+                    <div class="resource containers {{resource-percentage__containers}}">
+                      <div class="resource__top">
+                        <div class="resource__bar"></div>
+                      </div>
+                      <div class="resource__bot">
+                        <div class="resource__num">
+                          {{resource-num__containers}}
+                        </div>
+                        <div class="resource__name">
+                          Containers
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-title3">Containers/resources</div>
+                  <div class="row">
+                    <!-- /resource RAM -->
+                    <div class="resource ram {{resource-percentage__ram}}">
+                      <div class="resource__top">
+                        <div class="resource__bar"></div>
+                      </div>
+                      <div class="resource__bot">
+                        <div class="resource__num">
+                          {{resource-num__ram}}
+                        </div>
+                        <div class="resource__name">
+                          RAM
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <!-- /resource Disk -->
+                    <div class="resource disk {{resource-percentage__disk}}">
+                      <div class="resource__top">
+                        <div class="resource__bar"></div>
+                      </div>
+                      <div class="resource__bot">
+                        <div class="resource__num">
+                          {{resource-num__disk}}
+                        </div>
+                        <div class="resource__name">
+                          Disk
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <!-- /resource Transfer -->
+                    <div class="resource transfer {{resource-percentage__transfer}}">
+                      <div class="resource__top">
+                        <div class="resource__bar"></div>
+                      </div>
+                      <div class="resource__bot">
+                        <div class="resource__num">
+                          {{resource-num__transfer}}
+                        </div>
+                        <div class="resource__name">
+                          Transfer
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <!-- /resource Remote Connections -->
+                    <div class="resource remote {{resource-percentage__remote}}">
+                      <div class="resource__top">
+                        <div class="resource__bar"></div>
+                      </div>
+                      <div class="resource__bot">
+                        <div class="resource__num">
+                          {{resource-num__remote}}
+                        </div>
+                        <div class="resource__name">
+                          Remote Connections
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__section">
+                  <div class="card-footer">
+                    <div class="btn btn--purple dialog-upgrade">Upgrade</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main__row-item">
+            <!-- /CREATE NEW PROJECT ================ -->
+            <div class="card-wrap">
+              <div class="card new-project">
+                <span>Create New Project</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h1 class="card-title">Projects</h1>
+        <div class="main__row">
+
+          {{#projects}}
+            <div class="main__row-item">
+              <div class="card-wrap">
+                <div class="card project">
+                  <div class="card__section row">
+                    <div class="card-title2">
+                      {{project-title}}
+                    </div>
+                    <div class="card-btn">Open</div>
+                  </div>
+                  <div class="card__section col border-top">
+                    <div class="row">Project: {{project-state}}</div>
+                    <div class="row">Container cloned from {{project-url}}</div>
+                    <div class="row">Created: {{project-created}}</div>
+                    <div class="row">Last opened: {{project-last-opened}} ago</div>
+                    <div class="row">OS: {{project-os}}</div>
+                    <div class="row">CPU: {{project-cpu}}</div>
+                    <div class="row">RAM: {{project-ram}}</div>
+                    <div class="row">Disk: {{project-disk}}</div>
+                    <div class="row">Transfer: {{project-transfer}}</div>
+                    <div class="row m-top">Remote connections: {{project-remote-connections}}</div>
+                    <div class="row">Shared with: {{project-shared-with}}</div>
+                  </div>
+                  <div class="card__abs-bot row">
+                    <button class="btn-icon dialog-edit" data-balloon-pos="up" data-balloon="Edit">
+                      <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
+                      </svg>
+                    </button>
+                    <button class="btn-icon dialog-remove" data-balloon-pos="up" data-balloon="Remove">
+                      <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {{/projects}}
+          
+        </div>
+      </div>
+      <!-- /MAIN SECTION - SHARED WITH ME *********************************** -->
+      <div class="main shared-with-me hide">
+        <div class="main__row">
+          {{#shared-with-me}}
+            <div class="main__row-item">
+              <div class="card-wrap">
+                <div class="card">
+                  <div class="card__section row">
+                    <div class="card-title2">
+                      {{shared-with-me__name}}
+                    </div>
+                    <div class="card-btn">Open</div>
+                  </div>
+                  <div class="card__section col border-top">
+                    <div class="card-row">
+                      <div class="card-row__left">Created</div>
+                      <div class="card-row__right">{{shared-with-me__created}}</div>
+                    </div>
+                    <div class="card-row">
+                      <div class="card-row__left">Opened</div>
+                      <div class="card-row__right">{{shared-with-me__opened}}</div>
+                    </div>
+                    <div class="card-row">
+                      <div class="card-row__left">Shared by</div>
+                      <div class="card-row__right">{{shared-with-me__shared}}</div>
+                    </div>
+                  </div>
+                  <div class="card__abs-bot row">
+                    <button class="btn-icon" data-balloon-pos="up" data-balloon="Add to Project">
+                      <svg height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 6h-8l-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-2.06 11L15 15.28 12.06 17l.78-3.33-2.59-2.24 3.41-.29L15 8l1.34 3.14 3.41.29-2.59 2.24.78 3.33z"></path>
+                      </svg>
+                    </button>
+                    <button class="btn-icon dialog-remove" data-balloon-pos="up" data-balloon="Delete">
+                      <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {{/shared-with-me}}
+        </div>
+      </div>
+      <!-- /MAIN SECTION - MY SHARES *********************************** -->
+      <div class="main my-shares hide">
+        <div class="main__row">
+
+          {{#my-shares}}
+            <div class="main__row-item">
+              <div class="card-wrap">
+                <div class="card">
+                  <div class="card__section row">
+                    <div class="card-title2">
+                      {{my-shares__name}}
+                    </div>
+                  </div>
+                  <div class="card__section col border-top">
+                    <div class="card-row">
+                      <div class="card-row__left">Created</div>
+                      <div class="card-row__right">{{my-shares__created}}</div>
+                    </div>
+                    <div class="card-row">
+                      <div class="card-row__left">Opened</div>
+                      <div class="card-row__right">{{my-shares__opened}}</div>
+                    </div>
+                    <div class="card-row tooltip">
+                      <div class="card-row__left">Share link</div>
+                      <div class="card-row__right">{{my-shares__share-link}}</div>
+                      <div class="tooltiptext">{{my-shares__share-link}}</div>
+                    </div>
+                    <div class="card-row">
+                      <div class="card-row__left">Shared with</div>
+                      <div class="card-row__right">{{my-shares__shared}}</div>
+                    </div>
+                  </div>
+                  <div class="card__abs-bot row">
+                    <button class="btn-icon dialog-edit" data-balloon-pos="up" data-balloon="Edit">
+                      <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
+                      </svg>
+                    </button>
+                    <button class="btn-icon dialog-remove" data-balloon-pos="up" data-balloon="Remove">
+                      <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {{/my-shares}}
+        </div>
+      </div>
+      <!-- /MAIN SECTION - SSH KEYS *********************************** -->
+      <div class="main ssh-keys hide">
+        <div class="main__row">
+
+          {{#ssh-keys}}
+            <div class="main__row-item">
+              <div class="card-wrap">
+                <div class="card">
+                  <div class="card__section row">
+                    <div class="card-title2">
+                      {{ssh-keys__name}}
+                    </div>
+                    <div class="card-btn">Copy Link</div>
+                  </div>
+                  <div class="card__section col border-top">
+                    <div class="card-row">
+                      <div class="card-row__center">
+                        {{ssh-keys__keyphrase}}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {{/ssh-keys}}
+
+        </div>
+      </div>
+      <!-- /MAIN SECTION - CUSTOM STACKS *********************************** -->
+      <div class="main custom-stacks hide">
+        <div class="main__row">
+
+          {{#custom-stacks}}
+          <div class="main__row-item">
+            <div class="card-wrap">
+              <div class="card">
+                <div class="card__section row">
+                  <div class="card-title2">
+                    {{custom-stacks__title}}
+                  </div>
+                </div>
+                <div class="card__section col border-top">
+                    <div class="row">Project: {{custom-stacks__state}}</div>
+                    <div class="row">Container cloned from {{custom-stacks__url}}</div>
+                    <div class="row">Created: {{custom-stacks__created}}</div>
+                    <div class="row">Last opened: {{custom-stacks__last-opened}} ago</div>
+                    <div class="row">OS: {{custom-stacks__os}}</div>
+                    <div class="row">CPU: {{custom-stacks__cpu}}</div>
+                    <div class="row">RAM: {{custom-stacks__ram}}</div>
+                    <div class="row">Disk: {{custom-stacks__disk}}</div>
+                    <div class="row">Transfer: {{custom-stacks__transfer}}</div>
+                    <div class="row m-top">Remote connections: {{custom-stacks__remote-connections}}</div>
+                    <div class="row">Shared with: {{custom-stacks__shared-with}}</div>
+                  </div>
+                <div class="card__abs-bot row">
+                  <button class="btn-icon dialog-remove" data-balloon-pos="up" data-balloon="Remove">
+                    <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          {{/custom-stacks}}
+
+        </div>
+      </div>
+      <!-- /MAIN SECTION - CUSTOM DOMAINS *********************************** -->
+      <div class="main custom-domains hide">
+        <div class="main__row">
+          <div class="main__row-item">
+            <!-- /CREATE NEW CUSTOM DOMAIN ================ -->
+            <div class="card-wrap">
+              <div class="card new-custom-domain">
+                <span class="ncd-title">Create New Custom Domain</span>
+                <div class="ncd-wrap">
+                  <div class="card__section row">
+                    <div class="card-title2">
+                      Create New Custom Domain
+                    </div>
+                  </div>
+                  <div class="card__section row border-top">
+                    <div class="card-col">
+                      <div class="input-wrap domain-name">
+                        <div class="mui-input">
+                          <div class="group">
+                            <input name="" required="" type="text">
+                            <span class="bar"></span>
+                            <label>Domain name</label>
+                          </div>
+                          <span class="error"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-col">
+                      <div class="input-wrap">
+                        <div class="mui-select">
+                          <select>
+                            <option>Container</option>
+                            <option>FTP</option>
+                            <option>SFTP</option>
+                            <option>SSH</option>
+                            <option>Dropbox</option>
+                            <option>Google Drive</option>
+                            <option>One Drive</option>
+                          </select>
+                          <span class="bar"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-col">
+                      <div class="input-wrap">
+                        <div class="mui-input">
+                          <div class="group">
+                            <input name="" required="" type="text">
+                            <span class="bar"></span>
+                            <label>External port</label>
+                          </div>
+                          <span class="error"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-col">
+                      <div class="input-wrap">
+                        <div class="mui-input">
+                          <div class="group">
+                            <input name="" required="" type="text">
+                            <span class="bar"></span>
+                            <label>Internal port</label>
+                          </div>
+                          <span class="error"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__section row">
+                    <div class="card-footer">
+                      <div class="btn btn--transparent1 ncd-close">Close</div>
+                      <div class="btn btn--transparent1">Confirm</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {{#custom-domains}}
+          <div class="main__row-item">
+            <!-- /PROJECT 1 ================ -->
+              <div class="card-wrap">
+                <div class="card">
+                  <div class="card__section row">
+                    <div class="card-title2">
+                      {{custom-domains__user-email}}
+                    </div>
+                  </div>
+                  <div class="card__section row border-top">
+                    <div class="card-col">
+                      <div class="card-col__top">Domain name</div>
+                      <div class="card-col__bot">{{custom-domains__domain-name}}</div>
+                    </div>
+                    <div class="card-col">
+                      <div class="card-col__top">Container</div>
+                      <div class="card-col__bot">{{custom-domains__container}}</div>
+                    </div>
+                    <div class="card-col">
+                      <div class="card-col__top">External port</div>
+                      <div class="card-col__bot">{{custom-domains__external-port}}</div>
+                    </div>
+                    <div class="card-col">
+                      <div class="card-col__top">Internal port</div>
+                      <div class="card-col__bot">{{custom-domains__internal-port}}</div>
+                    </div>
+                  </div>
+                  <div class="card__abs-bot row">
+                    <button class="btn-icon dialog-remove" data-balloon-pos="up" data-balloon="Remove">
+                      <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {{/custom-domains}}
+
+        </div>
+      </div>
+      <!-- /MAIN SECTION - REFER A FRIEND *********************************** -->
+      <div class="main refer-friend hide">
+        <div class="main__row">
+          <div class="main__row-item">
+            <!-- /THREE STEPS ================ -->
+            <div class="three-steps">
+              <div class="card-wrap">
+                <div class="card refer">
+                  <div class="card__section col">
+                    <span class="refer__title">Step one</span>
+                    <p class="refer__text">Give friend 15$ off. Using your unique refferal link.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-wrap">
+                <div class="card refer">
+                  <div class="card__section col">
+                    <span class="refer__title">Step two</span>
+                    <p class="refer__text">Friends subscribe with discount.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-wrap">
+                <div class="card refer">
+                  <div class="card__section col">
+                    <span class="refer__title">Step three</span>
+                    <p class="refer__text">You also receive 15$ off for your subscription.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main__row-item">
+            <!-- /Share ================ -->
+            <div class="card-wrap">
+              <h1>Share</h1>
+              <div class="card refer-share">
+                <div class="card__section row">
+                  <div class="refer-share__content">
+                    <p>Sign up for Codeanywhere premium account and we both get $15 in credit</p>
+                    <a href="#">{{refer-link}}</a>
+                  </div>
+                  <div class="refer-share__links">
+                    <div class="refer-share__links__top">
+                      <div class="card-btn">Copy link</div>
+                    </div>
+                    <div class="refer-share__links__bot">
+                      <button class="btn-icon" data-balloon-pos="up" data-balloon="Share via Email">
+                        <svg viewbox="0 0 512 512">
+                          <path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"></path>
+                        </svg>
+                      </button>
+                      <button class="btn-icon" data-balloon-pos="up" data-balloon="Share via Facebook">
+                        <svg viewbox="0 0 512 512">
+                          <path d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z"></path>
+                        </svg>
+                      </button>
+                      <button class="btn-icon" data-balloon-pos="up" data-balloon="Share via Twitter">
+                        <svg viewbox="0 0 512 512">
+                          <path d="M419.6 168.6c-11.7 5.2-24.2 8.7-37.4 10.2 13.4-8.1 23.8-20.8 28.6-36 -12.6 7.5-26.5 12.9-41.3 15.8 -11.9-12.6-28.8-20.6-47.5-20.6 -42 0-72.9 39.2-63.4 79.9 -54.1-2.7-102.1-28.6-134.2-68 -17 29.2-8.8 67.5 20.1 86.9 -10.7-0.3-20.7-3.3-29.5-8.1 -0.7 30.2 20.9 58.4 52.2 64.6 -9.2 2.5-19.2 3.1-29.4 1.1 8.3 25.9 32.3 44.7 60.8 45.2 -27.4 21.4-61.8 31-96.4 27 28.8 18.5 63 29.2 99.8 29.2 120.8 0 189.1-102.1 185-193.6C399.9 193.1 410.9 181.7 419.6 168.6z"></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main__row-item">
+            <div class="main__col">
+              <!-- /Share With ================ -->
+              <div class="card-wrap">
+                <h1>Share With</h1>
+                <div class="card refer-share-with">
+                  <div class="card__section col">
+
+                    {{#referals}}
+                      <div class="card-row">
+                        <div class="card-col">
+                          {{referals__email}}
+                        </div>
+                        <div class="card-col">
+                          {{referals__date}}
+                        </div>
+                        <div class="card-col">
+                          {{referals__cost}}
+                        </div>
+                      </div>
+                    {{/referals}}
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="main__col">
+              <!-- /Refferal Tracking ================ -->
+              <div class="card-wrap">
+                <h1>Refferal tracking</h1>
+                <div class="card refer-tracking">
+                  <div class="card__section col">
+                    <div class="sub__total">{{refer-total}}</div>
+                    <div class="sub__total-desc">Total credit</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /DIALOGS *********************************** -->
+      <!-- /REMOVE Dialog =================== * -->
+      <div class="dialog-wrap remove">
+        <div class="dialog">
+          <div class="dialog__title">Remove {{dialog-item-name}}</div>
+          <div class="dialog__text">Are you sure you want to remove "{{dialog-item-name}}" ?</div>
+          <div class="dialog__buttons">
+            <div class="btn btn--transparent1 dialog-close">Cancel</div>
+            <div class="btn btn--transparent1 dialog-delete">Remove</div>
+          </div>
+        </div>
+      </div>
+      <!-- /EDIT Dialog =================== * -->
+      <div class="dialog-wrap edit">
+        <div class="dialog">
+          <div class="dialog__title">Edit {{dialog-item-name}}</div>
+          <div class="dialog__text">Are you sure you want to edit "{{dialog-item-name}}" ?</div>
+          <div class="dialog__buttons">
+            <div class="btn btn--transparent1 dialog-close">Cancel</div>
+            <div class="btn btn--transparent1 dialog-delete">Remove</div>
+          </div>
+        </div>
+      </div>
+      <!-- /ADD ACCOUNT Dialog =================== * -->
+      <div class="dialog-wrap account">
+        <div class="dialog">
+          <div class="dialog__title">Manage accounts</div>
+          <div class="dialog__input">
+            <div class="input-wrap add-account">
+              <div class="mui-input">
+                <div class="group">
+                  <input name="" required="" type="text">
+                  <span class="bar"></span>
+                  <label>Add account email</label>
+                </div>
+                <span class="error"></span>
+              </div>
+            </div>
+          </div>
+          <div class="dialog__buttons">
+            <div class="btn btn--transparent1 dialog-close">Cancel</div>
+            <div class="btn btn--transparent1 dialog-add">Add</div>
+          </div>
+        </div>
+      </div>
+      <!-- /PRICING PLANS Dialog =================== * -->
+      <div class="dialog-wrap pricing-plans">
+        <div class="dialog">
+          <div class="plans-buttons-mobile">
+            <div class="plans-btn btn-free active">Free</div>
+            <div class="plans-btn btn-starter">Starter</div>
+            <div class="plans-btn btn-freelancer">Freelancer</div>
+            <div class="plans-btn btn-professional">Proffesional</div>
+            <div class="plans-btn btn-business">Business</div>
+          </div>
+          <div class="plans">
+            <div class="plans-item plan plan-free active">
+              <div class="plans-item__title">Free</div>
+              <div class="plans-item__price">$0</div>
+              <div class="plans-item__billing">Per user/forever</div>
+              <div class="plans-item__button">Current plan</div>
+              <div class="plans-item__features">
+                <ul>
+                  <li>Everything you need to get started programming</li>
+                </ul>
+              </div>
+            </div>
+            <div class="plans-item plan plan-starter">
+              <div class="plans-item__title">Starter</div>
+              <div class="plans-item__price">$2</div>
+              <div class="plans-item__billing">
+                Per user/mo. (billed annually)
+                <br>
+                $3 user/mo. (billed monthly)
+              </div>
+              <div class="plans-item__button">
+                <div class="btn btn--purple dialog-payment">Upgrade</div>
+              </div>
+              <div class="plans-item__features">
+                <ul>
+                  <li>Premium support</li>
+                  <li>Revision System</li>
+                </ul>
+              </div>
+            </div>
+            <div class="plans-item plan plan-freelancer">
+              <div class="plans-item__title">Freelancer</div>
+              <div class="plans-item__price">$7</div>
+              <div class="plans-item__billing">
+                Per user/mo. (billed annually)
+                <br>
+                $10 user/mo. (billed monthly)
+              </div>
+              <div class="plans-item__button">
+                <div class="btn btn--purple dialog-payment">Upgrade</div>
+              </div>
+              <div class="plans-item__features">
+                <ul>
+                  <li>Connect up to 50 FTP servers</li>
+                  <li>1 Always-On Container</li>
+                  <li>Connect Multiples of the same Cloud Storage</li>
+                </ul>
+              </div>
+            </div>
+            <div class="plans-item plan plan-professional">
+              <div class="plans-item__title">Professional</div>
+              <div class="plans-item__price">$20</div>
+              <div class="plans-item__billing">
+                Per user/mo. (billed annually)
+                <br>
+                $25 user/mo. (billed monthly)
+              </div>
+              <div class="plans-item__button">
+                <div class="btn btn--purple dialog-payment">Upgrade</div>
+              </div>
+              <div class="plans-item__features">
+                <ul>
+                  <li>Unlimited FTP servers</li>
+                  <li>Manage multiple users</li>
+                  <li>Extra security</li>
+                </ul>
+              </div>
+            </div>
+            <div class="plans-item plan plan-business">
+              <div class="plans-item__title">Business</div>
+              <div class="plans-item__price">$40</div>
+              <div class="plans-item__billing">
+                Per user/mo. (billed annually)
+                <br>
+                $50 user/mo. (billed monthly)
+              </div>
+              <div class="plans-item__button">
+                <div class="btn btn--purple dialog-payment">Upgrade</div>
+              </div>
+              <div class="plans-item__features">
+                <ul>
+                  <li>Unlimited Cloud Services</li>
+                  <li>Unlimited Shares</li>
+                  <li>30 Powerfull Containers</li>
+                  <li>6 Always-On Containers</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="dialog-section">
+            or
+          </div>
+          <div class="dialog-section">
+            <div class="btn btn--purple dialog-compair">Compair our plans</div>
+          </div>
+          <div class="dialog__buttons">
+            <div class="btn btn--transparent1 dialog-close">Cancel</div>
+          </div>
+        </div>
+      </div>
+      <!-- /PRICING COMPARE Dialog =================== * -->
+      <div class="dialog-wrap pricing-compair">
+        <div class="dialog">
+          <div class="plans-buttons-mobile">
+            <div class="plans-btn btn-free active">Free</div>
+            <div class="plans-btn btn-starter">Starter</div>
+            <div class="plans-btn btn-freelancer">Freelancer</div>
+            <div class="plans-btn btn-professional">Proffesional</div>
+            <div class="plans-btn btn-business">Business</div>
+          </div>
+          <!-- /Prices row -->
+          <div class="prices">
+            <div class="plans">
+              <div class="plans-item compair plans-item1 active">
+                <div class="plans-item__title">Free</div>
+                <div class="plans-item__button">Current plan</div>
+              </div>
+              <div class="plans-item compair plans-item2">
+                <div class="plans-item__title">Starter</div>
+                <div class="plans-item__button">
+                  <div class="btn btn--purple dialog-payment">Upgrade</div>
+                </div>
+              </div>
+              <div class="plans-item compair plans-item3">
+                <div class="plans-item__title">Freelancer</div>
+                <div class="plans-item__button">
+                  <div class="btn btn--purple dialog-payment">Upgrade</div>
+                </div>
+              </div>
+              <div class="plans-item compair plans-item4">
+                <div class="plans-item__title">Professional</div>
+                <div class="plans-item__button">
+                  <div class="btn btn--purple dialog-payment">Upgrade</div>
+                </div>
+              </div>
+              <div class="plans-item compair plans-item5">
+                <div class="plans-item__title">Business</div>
+                <div class="plans-item__button">
+                  <div class="btn btn--purple dialog-payment">Upgrade</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /Comparison rows -->
+          <div class="comparison">
+            <div class="comparison__title">Editor</div>
+            <div class="comparison__list">
+              <div class="comparison-feature">
+                <div class="comparison-feature__name">Web Editor</div>
+                <div class="comparison-feature__presence feature__presence1">
+                  <svg height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                  </svg>
+                </div>
+                <div class="comparison-feature__presence feature__presence2">
+                  <svg height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                  </svg>
+                </div>
+                <div class="comparison-feature__presence feature__presence3">
+                  <svg height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                  </svg>
+                </div>
+                <div class="comparison-feature__presence feature__presence4">
+                  <svg height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                  </svg>
+                </div>
+                <div class="comparison-feature__presence feature__presence5">
+                  <svg height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="comparison-feature">
+                <div class="comparison-feature__name">Mobile Editor</div>
+                <div class="comparison-feature__presence feature__presence1">
+                  <svg height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                  </svg>
+                </div>
+                <div class="comparison-feature__presence feature__presence2">
+                  <svg height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                  </svg>
+                </div>
+                <div class="comparison-feature__presence feature__presence3">
+                  <svg height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                  </svg>
+                </div>
+                <div class="comparison-feature__presence feature__presence4">
+                  <svg height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                  </svg>
+                </div>
+                <div class="comparison-feature__presence feature__presence5">
+                  <svg height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="comparison-feature">
+                <div class="comparison-feature__name">SSH Terminal Console</div>
+                <div class="comparison-feature__presence feature__presence1">
+                  <svg height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                  </svg>
+                </div>
+                <div class="comparison-feature__presence feature__presence2">
+                  <svg height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                  </svg>
+                </div>
+                <div class="comparison-feature__presence feature__presence3">
+                  <svg height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                  </svg>
+                </div>
+                <div class="comparison-feature__presence feature__presence4">
+                  <svg height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                  </svg>
+                </div>
+                <div class="comparison-feature__presence feature__presence5">
+                  <svg height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="comparison-feature">
+                <div class="comparison-feature__name">Premium Technical Support (via Email)</div>
+                <div class="comparison-feature__presence feature__presence1">
+                  <svg height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+                  </svg>
+                </div>
+                <div class="comparison-feature__presence feature__presence2">
+                  <svg height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                  </svg>
+                </div>
+                <div class="comparison-feature__presence feature__presence3">
+                  <svg height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                  </svg>
+                </div>
+                <div class="comparison-feature__presence feature__presence4">
+                  <svg height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                  </svg>
+                </div>
+                <div class="comparison-feature__presence feature__presence5">
+                  <svg height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="comparison-feature">
+                <div class="comparison-feature__name">Two-Factor Authentification</div>
+                <div class="comparison-feature__presence feature__presence1">
+                  <svg height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+                  </svg>
+                </div>
+                <div class="comparison-feature__presence feature__presence2">
+                  <svg height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+                  </svg>
+                </div>
+                <div class="comparison-feature__presence feature__presence3">
+                  <svg height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                  </svg>
+                </div>
+                <div class="comparison-feature__presence feature__presence4">
+                  <svg height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                  </svg>
+                </div>
+                <div class="comparison-feature__presence feature__presence5">
+                  <svg height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="comparison">
+            <div class="comparison__title">Collaboration</div>
+            <div class="comparison__list">
+              <div class="comparison-feature">
+                <div class="comparison-feature__name">Shares</div>
+                <div class="comparison-feature__presence feature__presence1">
+                  <svg height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.6 6.62c-1.44 0-2.8.56-3.77 1.53L12 10.66 10.48 12h.01L7.8 14.39c-.64.64-1.49.99-2.4.99-1.87 0-3.39-1.51-3.39-3.38S3.53 8.62 5.4 8.62c.91 0 1.76.35 2.44 1.03l1.13 1 1.51-1.34L9.22 8.2C8.2 7.18 6.84 6.62 5.4 6.62 2.42 6.62 0 9.04 0 12s2.42 5.38 5.4 5.38c1.44 0 2.8-.56 3.77-1.53l2.83-2.5.01.01L13.52 12h-.01l2.69-2.39c.64-.64 1.49-.99 2.4-.99 1.87 0 3.39 1.51 3.39 3.38s-1.52 3.38-3.39 3.38c-.9 0-1.76-.35-2.44-1.03l-1.14-1.01-1.51 1.34 1.27 1.12c1.02 1.01 2.37 1.57 3.82 1.57 2.98 0 5.4-2.41 5.4-5.38s-2.42-5.37-5.4-5.37z"></path>
+                  </svg>
+                </div>
+                <div class="comparison-feature__presence feature__presence2">
+                  <svg height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.6 6.62c-1.44 0-2.8.56-3.77 1.53L12 10.66 10.48 12h.01L7.8 14.39c-.64.64-1.49.99-2.4.99-1.87 0-3.39-1.51-3.39-3.38S3.53 8.62 5.4 8.62c.91 0 1.76.35 2.44 1.03l1.13 1 1.51-1.34L9.22 8.2C8.2 7.18 6.84 6.62 5.4 6.62 2.42 6.62 0 9.04 0 12s2.42 5.38 5.4 5.38c1.44 0 2.8-.56 3.77-1.53l2.83-2.5.01.01L13.52 12h-.01l2.69-2.39c.64-.64 1.49-.99 2.4-.99 1.87 0 3.39 1.51 3.39 3.38s-1.52 3.38-3.39 3.38c-.9 0-1.76-.35-2.44-1.03l-1.14-1.01-1.51 1.34 1.27 1.12c1.02 1.01 2.37 1.57 3.82 1.57 2.98 0 5.4-2.41 5.4-5.38s-2.42-5.37-5.4-5.37z"></path>
+                  </svg>
+                </div>
+                <div class="comparison-feature__presence feature__presence3">
+                  <svg height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.6 6.62c-1.44 0-2.8.56-3.77 1.53L12 10.66 10.48 12h.01L7.8 14.39c-.64.64-1.49.99-2.4.99-1.87 0-3.39-1.51-3.39-3.38S3.53 8.62 5.4 8.62c.91 0 1.76.35 2.44 1.03l1.13 1 1.51-1.34L9.22 8.2C8.2 7.18 6.84 6.62 5.4 6.62 2.42 6.62 0 9.04 0 12s2.42 5.38 5.4 5.38c1.44 0 2.8-.56 3.77-1.53l2.83-2.5.01.01L13.52 12h-.01l2.69-2.39c.64-.64 1.49-.99 2.4-.99 1.87 0 3.39 1.51 3.39 3.38s-1.52 3.38-3.39 3.38c-.9 0-1.76-.35-2.44-1.03l-1.14-1.01-1.51 1.34 1.27 1.12c1.02 1.01 2.37 1.57 3.82 1.57 2.98 0 5.4-2.41 5.4-5.38s-2.42-5.37-5.4-5.37z"></path>
+                  </svg>
+                </div>
+                <div class="comparison-feature__presence feature__presence4">
+                  <svg height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.6 6.62c-1.44 0-2.8.56-3.77 1.53L12 10.66 10.48 12h.01L7.8 14.39c-.64.64-1.49.99-2.4.99-1.87 0-3.39-1.51-3.39-3.38S3.53 8.62 5.4 8.62c.91 0 1.76.35 2.44 1.03l1.13 1 1.51-1.34L9.22 8.2C8.2 7.18 6.84 6.62 5.4 6.62 2.42 6.62 0 9.04 0 12s2.42 5.38 5.4 5.38c1.44 0 2.8-.56 3.77-1.53l2.83-2.5.01.01L13.52 12h-.01l2.69-2.39c.64-.64 1.49-.99 2.4-.99 1.87 0 3.39 1.51 3.39 3.38s-1.52 3.38-3.39 3.38c-.9 0-1.76-.35-2.44-1.03l-1.14-1.01-1.51 1.34 1.27 1.12c1.02 1.01 2.37 1.57 3.82 1.57 2.98 0 5.4-2.41 5.4-5.38s-2.42-5.37-5.4-5.37z"></path>
+                  </svg>
+                </div>
+                <div class="comparison-feature__presence feature__presence5">
+                  <svg height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.6 6.62c-1.44 0-2.8.56-3.77 1.53L12 10.66 10.48 12h.01L7.8 14.39c-.64.64-1.49.99-2.4.99-1.87 0-3.39-1.51-3.39-3.38S3.53 8.62 5.4 8.62c.91 0 1.76.35 2.44 1.03l1.13 1 1.51-1.34L9.22 8.2C8.2 7.18 6.84 6.62 5.4 6.62 2.42 6.62 0 9.04 0 12s2.42 5.38 5.4 5.38c1.44 0 2.8-.56 3.77-1.53l2.83-2.5.01.01L13.52 12h-.01l2.69-2.39c.64-.64 1.49-.99 2.4-.99 1.87 0 3.39 1.51 3.39 3.38s-1.52 3.38-3.39 3.38c-.9 0-1.76-.35-2.44-1.03l-1.14-1.01-1.51 1.34 1.27 1.12c1.02 1.01 2.37 1.57 3.82 1.57 2.98 0 5.4-2.41 5.4-5.38s-2.42-5.37-5.4-5.37z"></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="comparison-feature">
+                <div class="comparison-feature__name">Revisions</div>
+                <div class="comparison-feature__presence feature__presence1">10</div>
+                <div class="comparison-feature__presence feature__presence2">20</div>
+                <div class="comparison-feature__presence feature__presence3">150</div>
+                <div class="comparison-feature__presence feature__presence4">500</div>
+                <div class="comparison-feature__presence feature__presence5">1000</div>
+              </div>
+              <div class="comparison-feature">
+                <div class="comparison-feature__name">Multiple Licenses Limit</div>
+                <div class="comparison-feature__presence feature__presence1">
+                  <svg height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+                  </svg>
+                </div>
+                <div class="comparison-feature__presence feature__presence2">
+                  <svg height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+                  </svg>
+                </div>
+                <div class="comparison-feature__presence feature__presence3">20</div>
+                <div class="comparison-feature__presence feature__presence4">50</div>
+                <div class="comparison-feature__presence feature__presence5">1000</div>
+              </div>
+            </div>
+          </div>
+          <div class="comparison">
+            <div class="comparison__title">Development Enviroments</div>
+            <div class="comparison__list">
+              <div class="comparison-feature">
+                <div class="comparison-feature__name">Remote Connections</div>
+                <div class="comparison-feature__presence feature__presence1">1</div>
+                <div class="comparison-feature__presence feature__presence2">5</div>
+                <div class="comparison-feature__presence feature__presence3">50</div>
+                <div class="comparison-feature__presence feature__presence4">
+                  <svg height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.6 6.62c-1.44 0-2.8.56-3.77 1.53L12 10.66 10.48 12h.01L7.8 14.39c-.64.64-1.49.99-2.4.99-1.87 0-3.39-1.51-3.39-3.38S3.53 8.62 5.4 8.62c.91 0 1.76.35 2.44 1.03l1.13 1 1.51-1.34L9.22 8.2C8.2 7.18 6.84 6.62 5.4 6.62 2.42 6.62 0 9.04 0 12s2.42 5.38 5.4 5.38c1.44 0 2.8-.56 3.77-1.53l2.83-2.5.01.01L13.52 12h-.01l2.69-2.39c.64-.64 1.49-.99 2.4-.99 1.87 0 3.39 1.51 3.39 3.38s-1.52 3.38-3.39 3.38c-.9 0-1.76-.35-2.44-1.03l-1.14-1.01-1.51 1.34 1.27 1.12c1.02 1.01 2.37 1.57 3.82 1.57 2.98 0 5.4-2.41 5.4-5.38s-2.42-5.37-5.4-5.37z"></path>
+                  </svg>
+                </div>
+                <div class="comparison-feature__presence feature__presence5">
+                  <svg height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.6 6.62c-1.44 0-2.8.56-3.77 1.53L12 10.66 10.48 12h.01L7.8 14.39c-.64.64-1.49.99-2.4.99-1.87 0-3.39-1.51-3.39-3.38S3.53 8.62 5.4 8.62c.91 0 1.76.35 2.44 1.03l1.13 1 1.51-1.34L9.22 8.2C8.2 7.18 6.84 6.62 5.4 6.62 2.42 6.62 0 9.04 0 12s2.42 5.38 5.4 5.38c1.44 0 2.8-.56 3.77-1.53l2.83-2.5.01.01L13.52 12h-.01l2.69-2.39c.64-.64 1.49-.99 2.4-.99 1.87 0 3.39 1.51 3.39 3.38s-1.52 3.38-3.39 3.38c-.9 0-1.76-.35-2.44-1.03l-1.14-1.01-1.51 1.34 1.27 1.12c1.02 1.01 2.37 1.57 3.82 1.57 2.98 0 5.4-2.41 5.4-5.38s-2.42-5.37-5.4-5.37z"></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="comparison-feature">
+                <div class="comparison-feature__name">Custom Domains</div>
+                <div class="comparison-feature__presence feature__presence1">1</div>
+                <div class="comparison-feature__presence feature__presence2">1</div>
+                <div class="comparison-feature__presence feature__presence3">2</div>
+                <div class="comparison-feature__presence feature__presence4">4</div>
+                <div class="comparison-feature__presence feature__presence5">7</div>
+              </div>
+              <div class="comparison-feature">
+                <div class="comparison-feature__name">Containers (Standard)</div>
+                <div class="comparison-feature__presence feature__presence1">1</div>
+                <div class="comparison-feature__presence feature__presence2">1</div>
+                <div class="comparison-feature__presence feature__presence3">10</div>
+                <div class="comparison-feature__presence feature__presence4">20</div>
+                <div class="comparison-feature__presence feature__presence5">30</div>
+              </div>
+              <div class="comparison-feature">
+                <div class="comparison-feature__name">Containers (RAM)</div>
+                <div class="comparison-feature__presence feature__presence1">256 MB</div>
+                <div class="comparison-feature__presence feature__presence2">256 MB</div>
+                <div class="comparison-feature__presence feature__presence3">512 MB</div>
+                <div class="comparison-feature__presence feature__presence4">768 MB</div>
+                <div class="comparison-feature__presence feature__presence5">1024 MB</div>
+              </div>
+              <div class="comparison-feature">
+                <div class="comparison-feature__name">Containers (HDD)</div>
+                <div class="comparison-feature__presence feature__presence1">2 GB</div>
+                <div class="comparison-feature__presence feature__presence2">2 GB</div>
+                <div class="comparison-feature__presence feature__presence3">5 GB</div>
+                <div class="comparison-feature__presence feature__presence4">10 GB</div>
+                <div class="comparison-feature__presence feature__presence5">15 GB</div>
+              </div>
+              <div class="comparison-feature">
+                <div class="comparison-feature__name">Containers (Always on)</div>
+                <div class="comparison-feature__presence feature__presence1">0</div>
+                <div class="comparison-feature__presence feature__presence2">0</div>
+                <div class="comparison-feature__presence feature__presence3">1</div>
+                <div class="comparison-feature__presence feature__presence4">3</div>
+                <div class="comparison-feature__presence feature__presence5">6</div>
+              </div>
+              <div class="comparison-feature">
+                <div class="comparison-feature__name">Custom stacks</div>
+                <div class="comparison-feature__presence feature__presence1">1</div>
+                <div class="comparison-feature__presence feature__presence2">1</div>
+                <div class="comparison-feature__presence feature__presence3">10</div>
+                <div class="comparison-feature__presence feature__presence4">20</div>
+                <div class="comparison-feature__presence feature__presence5">30</div>
+              </div>
+            </div>
+          </div>
+          <!-- /Prices row -->
+          <div class="prices">
+            <div class="plans">
+              <div class="plans-item">
+                <div class="plans-item__title">Free</div>
+                <div class="plans-item__button">Current plan</div>
+              </div>
+              <div class="plans-item">
+                <div class="plans-item__title">Starter</div>
+                <div class="plans-item__button">
+                  <div class="btn btn--purple dialog-payment">Upgrade</div>
+                </div>
+              </div>
+              <div class="plans-item">
+                <div class="plans-item__title">Freelancer</div>
+                <div class="plans-item__button">
+                  <div class="btn btn--purple dialog-payment">Upgrade</div>
+                </div>
+              </div>
+              <div class="plans-item">
+                <div class="plans-item__title">Professional</div>
+                <div class="plans-item__button">
+                  <div class="btn btn--purple dialog-payment">Upgrade</div>
+                </div>
+              </div>
+              <div class="plans-item">
+                <div class="plans-item__title">Business</div>
+                <div class="plans-item__button">
+                  <div class="btn btn--purple dialog-payment">Upgrade</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dialog__buttons">
+            <div class="btn btn--transparent1 dialog-compair-close">Cancel</div>
+          </div>
+        </div>
+      </div>
+      <!-- /PAYMENT Dialog =================== * -->
+      <div class="dialog-wrap pricing-payment">
+        <div class="dialog">
+          <div class="dialog-col-wrap">
+            <div class="dialog-col2">
+              <div class="payment-options">
+                <div class="plans">
+                  <div class="plans-item active" id="payment-option1">
+                    <div class="plans-item__title">Monthly</div>
+                    <div class="plans-item__price">{{payment__monthly}}</div>
+                    <div class="plans-item__billing">Per user monthly</div>
+                  </div>
+                  <div class="plans-item" id="payment-option2">
+                    <div class="plans-item__title">Yearly</div>
+                    <div class="plans-item__price">{{payment__yearly}}</div>
+                    <div class="plans-item__billing">Per user yearly</div>
+                  </div>
+                </div>
+              </div>
+              <div class="payment-methods">
+                <div class="radio-btn">
+                  <input checked id="p-option1" name="selector" type="radio">
+                  <label for="p-option1">
+                    <img alt="Visa" src="assets/images/credit-cards/visa.svg">
+                    <img alt="MasterCard" src="assets/images/credit-cards/mastercard.svg">
+                    <img alt="Amex" src="assets/images/credit-cards/amex.svg">
+                    <img alt="Diners" src="assets/images/credit-cards/diners.svg">
+                    <img alt="JCB" src="assets/images/credit-cards/jcb.svg">
+                  </label>
+                </div>
+                <div class="radio-btn">
+                  <input id="p-option2" name="selector" type="radio">
+                  <label for="p-option2">
+                    <img alt="PayPal" src="assets/images/credit-cards/paypal.svg">
+                  </label>
+                </div>
+              </div>
+              <div class="payment-user-details">
+                <div class="card-row2">
+                  <div class="input-wrap first-name">
+                    <div class="mui-input">
+                      <div class="group">
+                        <input name="" required="" type="text">
+                        <span class="bar"></span>
+                        <label>First Name</label>
+                      </div>
+                      <span class="error"></span>
+                    </div>
+                  </div>
+                  <div class="input-wrap last-name">
+                    <div class="mui-input">
+                      <div class="group">
+                        <input name="" required="" type="text">
+                        <span class="bar"></span>
+                        <label>Last Name</label>
+                      </div>
+                      <span class="error"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="input-wrap credit-card">
+                <div class="mui-input">
+                  <div class="group">
+                    <input name="" required="" type="number">
+                    <span class="bar"></span>
+                    <label>Credit Card Number</label>
+                  </div>
+                  <span class="error"></span>
+                </div>
+              </div>
+              <div class="card-row3">
+                <div class="input-wrap card-date">
+                  <div class="mui-select">
+                    <select>
+                      <option selected="selected">01 - January</option>
+                      <option>02 - February</option>
+                      <option>03 - March</option>
+                      <option>04 - April</option>
+                      <option>05 - May</option>
+                      <option>06 - June</option>
+                      <option>07 - July</option>
+                      <option>08 - August</option>
+                      <option>09 - September</option>
+                      <option>10 - October</option>
+                      <option>11 - November</option>
+                      <option>12 - December</option>
+                    </select>
+                    <span class="bar"></span>
+                  </div>
+                </div>
+                <div class="input-wrap card-year">
+                  <div class="mui-select">
+                    <select>
+                      <option selected="selected">2017</option>
+                      <option>2018</option>
+                      <option>2019</option>
+                      <option>2020</option>
+                      <option>2021</option>
+                      <option>2022</option>
+                      <option>2023</option>
+                      <option>2024</option>
+                      <option>2025</option>
+                      <option>2026</option>
+                      <option>2027</option>
+                      <option>2028</option>
+                      <option>2029</option>
+                      <option>2030</option>
+                      <option>2031</option>
+                      <option>2032</option>
+                      <option>2033</option>
+                      <option>2034</option>
+                      <option>2035</option>
+                    </select>
+                    <span class="bar"></span>
+                  </div>
+                </div>
+                <div class="input-wrap card-cvv">
+                  <div class="mui-input">
+                    <div class="group">
+                      <input name="" required="" type="number">
+                      <span class="bar"></span>
+                      <label>CVV</label>
+                    </div>
+                    <span class="error"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-row2">
+                <div class="input-wrap state">
+                  <div class="mui-input">
+                    <div class="group">
+                      <input name="" required="" type="text">
+                      <span class="bar"></span>
+                      <label>State/Province</label>
+                    </div>
+                    <span class="error"></span>
+                  </div>
+                </div>
+                <div class="input-wrap zip">
+                  <div class="mui-input">
+                    <div class="group">
+                      <input name="" required="" type="number">
+                      <span class="bar"></span>
+                      <label>Zip/Postal Code</label>
+                    </div>
+                    <span class="error"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="input-wrap country">
+                <div class="mui-select">
+                  <select>
+                    <option selected="selected">Croatia</option>
+                    <option>Bosna i Hercegovina</option>
+                    <option>Slovenia</option>
+                  </select>
+                  <span class="bar"></span>
+                </div>
+              </div>
+            </div>
+            <div class="dialog-col2">
+              <div class="payment-addons">
+                <h3 class="title--large">Addons</h3>
+                <div class="addon-item">
+                  <div class="addon-item__name">
+                    Container always on
+                  </div>
+                  <div class="addon-item__count">
+                    <input id="addon-alwayson" type="number" value="0">
+                  </div>
+                  <div id="addon-alwayson-total" class="addon-item__total">
+                    $0{{addon-alwayson-total}}
+                  </div>
+                </div>
+                <div class="addon-item">
+                  <div class="addon-item__name">
+                    Additional 15 Connections
+                  </div>
+                  <div class="addon-item__count">
+                    <input id="addon-connections" type="number" value="0">
+                  </div>
+                  <div id="addon-connections-total" class="addon-item__total">
+                    $0{{addon-connections-total}}
+                  </div>
+                </div>
+                <div class="addon-item">
+                  <div class="addon-item__name">
+                    Additional 15 Custom Domains
+                  </div>
+                  <div class="addon-item__count">
+                    <input id="addon-custom-domains" type="number" value="0">
+                  </div>
+                  <div id="addon-custom-domains-total" class="addon-item__total">
+                    $0{{addon-custom-domains-total}}
+                  </div>
+                </div>
+                <div class="addon-item">
+                  <div class="addon-item__name">
+                    Unlimited Revisins
+                  </div>
+                  <div class="addon-item__count">
+                    <input id="addon-revisions" type="number" value="0">
+                  </div>
+                  <div id="addon-revisions-total" class="addon-item__total">
+                    $0{{addon-revisions-total}}
+                  </div>
+                </div>
+              </div>
+              <div class="payment-coupon">
+                <div class="input-wrap coupon">
+                  <div class="mui-input">
+                    <div class="group">
+                      <input name="" required="" type="text">
+                      <span class="bar"></span>
+                      <label>Coupon code</label>
+                    </div>
+                    <span class="error"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="payment-summary">
+                <div class="summary-item">
+                  <div class="summary-item__name">ITEM</div>
+                  <div class="summary-item__months">MONTHS</div>
+                  <div class="summary-item__price">PRICE</div>
+                </div>
+                <div class="summary-item">
+                  <div class="summary-item__name">{{payment__plan}}</div>
+                  <div class="summary-item__months">{{payment__months}}</div>
+                  <div class="summary-item__price">{{payment__price}}</div>
+                </div>
+                <div class="summary-item">
+                  <div class="summary-item__name">Addons</div>
+                  <div class="summary-item__months"></div>
+                  <div id="summary-payment-addons" class="summary-item__price">$0</div>
+                </div>
+                <div class="summary-item">
+                  <div class="summary-item__name">Discount</div>
+                  <div class="summary-item__months"></div>
+                  <div class="summary-item__price">{{payment__discount}}</div>
+                </div>
+                <div class="summary-item">
+                  <div class="summary-item__name">Total</div>
+                  <div class="summary-item__months"></div>
+                  <div class="summary-item__price">{{payment__total}}</div>
+                </div>
+              </div>
+              <div class="payment-subscribe">
+                <div class="subscribe-tos">
+                  By clicking SUBSCRIBE, you agree to our <a href="https://codeanywhere.com/tos">Terms of service</a>
+                </div>
+                <div class="subscribe-btn">
+                  <div class="btn btn--purple">Subscribe</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dialog__buttons">
+            <div class="btn btn--transparent1 dialog-payment-close">Cancel</div>
+          </div>
+        </div>
+      </div>
+      <!-- /SEARCH RESULTS SECTION -->
+      <div class="main search-results col hide">
+        <div class="main__row">
+          <div class="main__row-item">
+            <div class="search-list">
+              {{#search-list}}
+                <div class="search-list-item">{{search-list__item}}</div>
+              {{/search-list}}
+            </div>
+          </div>
+        </div>
+        <div class="main__row">
+          <h1 class="card-title">All results</h1>
+
+          {{#search-results}}
+            <div class="card-wrap">
+              <div class="card">
+                <div class="card__section row">
+                  <div class="card-title2">
+                    {{search-results__user-email}}
+                  </div>
+                </div>
+                <div class="card__section row border-top">
+                  <div class="card-col">
+                    <div class="card-col__top">Created</div>
+                    <div class="card-col__bot">{{search-results__created}}</div>
+                  </div>
+                  <div class="card-col">
+                    <div class="card-col__top">Platform</div>
+                    <div class="card-col__bot">{{search-results__platform}}</div>
+                  </div>
+                  <div class="card-col">
+                    <div class="card-col__top">Description</div>
+                    <div class="card-col__bot">{{search-results__description}}</div>
+                  </div>
+                  <div class="card-col">
+                    <div class="card-col__top">Created by</div>
+                    <div class="card-col__bot">{{search-results__creator}}</div>
+                  </div>
+                </div>
+                <div class="card__abs-bot row">
+                  <div class="btn-icon dialog-remove">
+                    <svg height="100%" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {{/search-results}}
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script src="/assets/js/myscript.js" type="text/javascript"></script>
+<script type="text/javascript">
+  var prices = {
+    'addon-alwayson': {{addon-price-alwayson}},
+    'addon-connections': {{addon-price-connections}},
+    'addon-custom-domains': {{addon-price-custom-domains}},
+    'addon-revisions': {{addon-price-revisions}}
+  }
+</script>
